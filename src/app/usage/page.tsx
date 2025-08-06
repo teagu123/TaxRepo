@@ -8,7 +8,7 @@ export default function UsagePage() {
     <div>
       <div className="bg-pink-100">
         <Container>
-          <H1Txt classname="py-10 text-[30px]">
+          <H1Txt classname="py-10 text-[20px] md:text-[30px]">
             Samil Accounting Insight 이용 안내
           </H1Txt>
         </Container>
@@ -22,7 +22,7 @@ export default function UsagePage() {
           <StepBox key={idx} data={el} />
         ))}
 
-        <H1Txt classname="mt-20 mb-7 text-[30px]">
+        <H1Txt classname="mt-20 mb-7 text-[20px] md:text-[30px]">
           (설치형) 사내 데이터를 활용한 AI 서비스 구축 프로세스
         </H1Txt>
         <div>

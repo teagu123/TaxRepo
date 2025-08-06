@@ -8,7 +8,7 @@ export default function PricePage() {
     <div>
       <div className="bg-pink-100">
         <Container>
-          <H1Txt classname="py-10 text-[30px]">
+          <H1Txt classname="py-10 text-[20px] md:text-[30px]">
             Samil Accounting Insight 요금 안내
           </H1Txt>
         </Container>
