@@ -47,7 +47,7 @@ export default function GNB() {
             </Link>
             <OrangeButton>이용문의</OrangeButton>
           </div>
-          <div className="mt-3 flex justify-center gap-8 text-sm font-semibold">
+          <div className="mt-3 flex justify-start gap-8 text-sm font-semibold">
             <Link href={"/"}>
               <div className="cursor-pointer">AI 서비스</div>
             </Link>
