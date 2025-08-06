@@ -1,9 +1,27 @@
+"use client";
 import OrangeButton from "@/components/atoms/button/orangeButton";
-
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function GNB() {
+  const pathname = usePathname();
+
+  const urlList = [
+    {
+      url: "/",
+      label: "AI 서비스",
+    },
+    {
+      url: "/usage",
+      label: "이용 안내",
+    },
+    {
+      url: "/price",
+      label: "요금 안내",
+    },
+  ];
+
   return (
     <>
       <div className="bg-gray-100 fixed top-0 left-0 right-0 z-50 py-5 px-10 lg:px-20">
@@ -19,15 +37,25 @@ export default function GNB() {
                 height={40}
               />
             </Link>
-            <Link href={"/"}>
-              <div className="cursor-pointer">AI 서비스</div>
-            </Link>
-            <Link href={"/usage"}>
-              <div className="cursor-pointer">이용 안내</div>
-            </Link>
-            <Link href={"/price"}>
-              <div className="cursor-pointer">요금 안내</div>
-            </Link>
+            {urlList.map((el, idx) => {
+              const isActive = pathname === el.url && pathname !== "/";
+              return (
+                <Link href={el.url} key={idx}>
+                  <div
+                    className={`
+                      cursor-pointer 
+                      border-b-[5px] 
+                      border-transparent 
+                      hover:border-b-orange-500 
+                      ${isActive ? "border-b-orange-500" : ""}
+                      pb-[6px] /* border 두께만큼 padding-bottom 줘서 높이 변동 방지 */
+                    `}
+                  >
+                    {el.label}
+                  </div>
+                </Link>
+              );
+            })}
           </div>
 
           {/* 오른쪽: 이용문의 버튼 */}
@@ -48,15 +76,25 @@ export default function GNB() {
             <OrangeButton>이용문의</OrangeButton>
           </div>
           <div className="mt-3 flex justify-start gap-8 text-sm font-semibold">
-            <Link href={"/"}>
-              <div className="cursor-pointer">AI 서비스</div>
-            </Link>
-            <Link href={"/usage"}>
-              <div className="cursor-pointer">이용 안내</div>
-            </Link>
-            <Link href={"/price"}>
-              <div className="cursor-pointer">요금 안내</div>
-            </Link>
+            {urlList.map((el, idx) => {
+              const isActive = pathname === el.url && pathname !== "/";
+              return (
+                <Link href={el.url} key={idx}>
+                  <div
+                    className={`
+                      cursor-pointer
+                      border-b-[5px]
+                      border-transparent
+                      hover:border-orange-500
+                      ${isActive ? "border-orange-500" : ""}
+                      pb-[6px]
+                    `}
+                  >
+                    {el.label}
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
