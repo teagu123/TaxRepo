@@ -6,6 +6,11 @@ import Image from "next/image";
 export default function PricePage() {
   return (
     <div>
+      <div className="flex items-center gap-3 ml-20 py-3 text-[14px] font-bold">
+        <div>Samil PwC</div>
+        <div>{">"}</div>
+        <div>요금 안내</div>
+      </div>
       <div className="bg-pink-100">
         <Container>
           <H1Txt classname="py-10 text-[20px] md:text-[30px]">
