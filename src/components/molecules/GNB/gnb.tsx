@@ -24,7 +24,7 @@ export default function GNB() {
 
   return (
     <>
-      <div className="bg-gray-100 fixed top-0 left-0 right-0 z-50 py-5 px-10 lg:px-20">
+      <div className="bg-white border-b-1 border-b-gray-200 fixed top-0 left-0 right-0 z-50 pt-5 px-10 lg:px-20">
         {/* PC 이상에서는 flex 한 줄로, 모바일에서는 2줄 */}
         <div className="hidden md:flex w-full items-center justify-between">
           {/* 왼쪽: 로고 + 메뉴 */}
@@ -35,6 +35,7 @@ export default function GNB() {
                 alt="logoImg"
                 width={60}
                 height={40}
+                className="pb-3 mr-5"
               />
             </Link>
             {urlList.map((el, idx) => {
@@ -48,7 +49,7 @@ export default function GNB() {
                       border-transparent 
                       hover:border-b-orange-500 
                       ${isActive ? "border-b-orange-500" : ""}
-                      pb-[6px] /* border 두께만큼 padding-bottom 줘서 높이 변동 방지 */
+                      pb-[10px] /* border 두께만큼 padding-bottom 줘서 높이 변동 방지 */
                     `}
                   >
                     {el.label}
@@ -59,6 +60,7 @@ export default function GNB() {
           </div>
 
           {/* 오른쪽: 이용문의 버튼 */}
+
           <OrangeButton>이용문의</OrangeButton>
         </div>
 
