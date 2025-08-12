@@ -30,6 +30,7 @@ export default function UsagePage() {
         <H1Txt classname="mt-20 mb-7 text-[20px] md:text-[30px]">
           (설치형) 사내 데이터를 활용한 AI 서비스 구축 프로세스
         </H1Txt>
+
         <div>
           업무 매뉴얼과 사내 정책서와 같은 내부 데이터를 기반으로 AI 시스템을
           설계하고 구축하는 전체 과정을 SAI 전담 컨설턴트가 도와드립니다. 이를

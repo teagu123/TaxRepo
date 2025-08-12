@@ -11,7 +11,7 @@ export default function OrangeButton({
 }) {
   return (
     <div
-      className={` px-3 py-1.5 text-white rounded-[5px]  cursor-pointer ${classname} ${
+      className={` px-3 py-1.5 text-white rounded-[5px] text-[13px]  cursor-pointer ${classname} ${
         isDisable ? "bg-gray-400" : " bg-taxAi-orange"
       }`}
     >
