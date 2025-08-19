@@ -3,12 +3,71 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* PWC brand colors */
+  /* Orange scale */
+  --color-pwc-orange-500: rgb(253, 81, 8); /* #FD5108 */
+  --color-pwc-orange-400: rgb(254, 124, 57); /* #FE7C39 */
+  --color-pwc-orange-300: rgb(255, 170, 114); /* #FFAA72 */
+  --color-pwc-orange-200: rgb(255, 205, 168); /* #FFCDA8 */
+  --color-pwc-orange-100: rgb(255, 232, 212); /* #FFE8D4 */
+  --color-pwc-orange-50: rgb(255, 245, 237); /* #FFF5ED */
+
+  /* Grey scale */
+  --color-pwc-gray-500: rgb(161, 168, 179); /* #A1A8B3 */
+  --color-pwc-gray-400: rgb(181, 188, 196); /* #B5BCC4 */
+  --color-pwc-gray-300: rgb(203, 209, 214); /* #CBD1D6 */
+  --color-pwc-gray-200: rgb(223, 227, 230); /* #DFE3E6 */
+  --color-pwc-gray-100: rgb(238, 239, 241); /* #EEEFF1 */
+  --color-pwc-gray-50: rgb(245, 247, 248); /* #F5F7F8 */
+
+  /* Other brand colors */
+  --color-pwc-tangerine: rgb(255, 159, 0); /* #FF9F00 */
+  --color-pwc-red: rgb(250, 20, 60); /* #FA143C */
+  --color-pwc-rose: rgb(240, 85, 150); /* #F05596 */
+  --color-pwc-white: rgb(255, 255, 255); /* #FFFFFF */
+  --color-pwc-black: rgb(0, 0, 0); /* #000000 */
+  --color-pwc-text-grey: rgb(75, 83, 94); /* #4B535E */
+
+  /* Status backgrounds */
+  --color-pwc-status-success-bg: rgb(5, 150, 105); /* #059669 */
+  --color-pwc-status-warning-bg: rgb(233, 176, 31); /* #E9B01F */
+  --color-pwc-status-error-bg: rgb(220, 38, 38); /* #DC2626 */
 }
 
 @theme {
   --color-taxAi-orange: #fd5108;
   --color-taxAi-beige: #ffe8d4;
   --color-taxAi-gray: #ffffff;
+
+  /* PWC brand colors exposed to Tailwind (v4 design tokens) */
+  /* Orange scale */
+  --color-pwc-orange-500: #fd5108; /* rgb(253, 81, 8) */
+  --color-pwc-orange-400: #fe7c39; /* rgb(254, 124, 57) */
+  --color-pwc-orange-300: #ffaa72; /* rgb(255, 170, 114) */
+  --color-pwc-orange-200: #ffcda8; /* rgb(255, 205, 168) */
+  --color-pwc-orange-100: #ffe8d4; /* rgb(255, 232, 212) */
+  --color-pwc-orange-50: #fff5ed;  /* rgb(255, 245, 237) */
+
+  /* Grey scale */
+  --color-pwc-gray-500: #a1a8b3; /* rgb(161, 168, 179) */
+  --color-pwc-gray-400: #b5bcc4; /* rgb(181, 188, 196) */
+  --color-pwc-gray-300: #cbd1d6; /* rgb(203, 209, 214) */
+  --color-pwc-gray-200: #dfe3e6; /* rgb(223, 227, 230) */
+  --color-pwc-gray-100: #eeeff1; /* rgb(238, 239, 241) */
+  --color-pwc-gray-50: #f5f7f8;  /* rgb(245, 247, 248) */
+
+  /* Other brand colors */
+  --color-pwc-tangerine: #ff9f00; /* rgb(255, 159, 0) */
+  --color-pwc-red: #fa143c;       /* rgb(250, 20, 60) */
+  --color-pwc-rose: #f05596;      /* rgb(240, 85, 150) */
+  --color-pwc-white: #ffffff;     /* rgb(255, 255, 255) */
+  --color-pwc-black: #000000;     /* rgb(0, 0, 0) */
+  --color-pwc-text-grey: #4b535e; /* rgb(75, 83, 94) */
+
+  /* Status backgrounds */
+  --color-pwc-status-success-bg: #059669; /* rgb(5, 150, 105) */
+  --color-pwc-status-warning-bg: #e9b01f; /* rgb(233, 176, 31) */
+  --color-pwc-status-error-bg: #dc2626;   /* rgb(220, 38, 38) */
 }
 
 @media (prefers-color-scheme: dark) {
