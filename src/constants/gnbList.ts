@@ -1,10 +1,10 @@
 export const URL_LIST = [
   {
-    url: "/",
+    url: "/#service",
     label: "AI 서비스",
   },
   {
-    url: "/usage",
+    url: "/#service2",
     label: "이용 안내",
   },
   {
