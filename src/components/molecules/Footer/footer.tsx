@@ -5,16 +5,17 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div>
-      <div className="bg-gray-100 py-20 flex flex-col items-center">
-        <H1Txt classname="text-[20px] md:text-[30px]">
-          AI 회계 전문가가 필요하신가요?
+      <div className="py-10 mb-10 flex flex-col items-center">
+        <H1Txt classname="text-[20px] md:text-[30px] mb-10">
+          혁신적인 AI Tax Agent를 무료체험 해보세요
         </H1Txt>
-        <div className="text-[16px] md:text-[20px] my-10 text-center mx-5 md:mx-0">
-          이용 문의를 통해 Samil Accounting Insight를 더 자세히 알아보세요.
-        </div>
-        <OrangeButton classname="text-[20px] font-bold">이용 문의</OrangeButton>
+
+        <OrangeButton classname="text-[18px] font-semibold">
+          무료 체험하기
+        </OrangeButton>
       </div>
-      <div className=" flex justify-center py-5">
+
+      <div className=" flex justify-center py-10 bg-pwc-gray-50">
         <div className="max-w-7xl w-full px-10 flex flex-col md:flex-row items-center gap-20">
           <Image
             src={"/images/logo.svg"}

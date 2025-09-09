@@ -1,9 +1,13 @@
+import { Noto_Sans_KR } from "next/font/google";
+import localFont from "next/font/local";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import GNB from "@/components/molecules/GNB/gnb";
 import Footer from "@/components/molecules/Footer/footer";
+import { cn } from "@/utils/cn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,6 +17,46 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const notoSansKr = Noto_Sans_KR({
+  subsets: ["latin-ext"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-noto-sans",
+  display: "swap",
+});
+
+const helveticaNeue = localFont({
+  src: [
+    {
+      path: "./fonts/HelveticaNeueLTW15-45Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/HelveticaNeueLTW15-55Roman.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/HelveticaNeueLTW15-65Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/HelveticaNeueLTW15-65Medium.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/HelveticaNeueLTW15-75Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-helvetica-neue",
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -40,9 +84,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="ko"
+      className={cn(helveticaNeue.variable, notoSansKr.variable)} // font variable을 전달한다.
+    >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <GNB />
         {children}
