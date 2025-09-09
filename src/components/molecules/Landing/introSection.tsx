@@ -1,16 +1,6 @@
-import Banner from "@/components/atoms/banner/banner";
 import { Container } from "@/components/Template";
-import { FNSAMPLELIST } from "@/constants/functionIntroSampleList";
-import FunctionIntro from "../FunctionIntro/functionIntro";
-import H1Txt from "@/components/atoms/H1Txt/H1Txt";
-import { QUESTIONLIST, QuestionListType } from "@/constants/questionList";
 import OrangeButton from "@/components/atoms/button/orangeButton";
-import QnABox from "../QnABox/qnaBox";
-import {
-  SECURITYBOXLIST,
-  SecurityBoxListType,
-} from "@/constants/securityBoxList";
-import SecurityBox from "@/components/atoms/box/securityBox";
+import { ArrowUp } from "lucide-react";
 
 export function IntroSection() {
   const selectQuestion = "일반 질의";
@@ -20,24 +10,45 @@ export function IntroSection() {
       {/* <Banner /> */}
 
       <Container>
-        <div className="text-4xl font-bold leading-15 min-h-[70vh] flex items-center animate-slideInFromRight-1200">
-          <div>
-            <div>삼일회계법인이 직접 선별한 세무 데이터와</div>
-            <div className="mb-3">
-              자체 개발 검색 알고리즘으로 구현한 AI 솔루션을 경험해보세요.
+        <div className="text-xl text-[#222C40] leading-8  mt-10 animate-slideInFromRight-1200">
+          <div className="font-semibold text-[35px] mt-10">
+            삼일회계법인이 만든 세무 전문 AI Agent
+          </div>
+          <div className="mt-10">
+            <div>
+              삼일회계법인이 직접 선별한
+              <span className="relative">
+                세무 데이터
+                <span className="absolute left-0 right-0 bottom-0.5 h-2.5 bg-pwc-orange-100 -z-10"></span>
+              </span>
+              와
             </div>
-            <div className="text-xl text-pwc-orange-300 mt-10 animate-slideInFromRight-1500">
-              <div>Hugging Face MTEB 리더보드 1위를 기록한 검증된 기술로</div>
-              <div>한 단계 더 업그레이드된 답변을 제공합니다</div>
+            <div className="mb-[24px]">
+              <span className="relative">
+                자체 개발 검색 알고리즘
+                <span className="absolute left-0 right-0 bottom-0.5 h-2.5 bg-pwc-orange-100 -z-10"></span>
+              </span>
+              으로 구현한 AI 솔루션을 경험해보세요.
             </div>
           </div>
+          <div>
+            <div>
+              <span className="font-semibold">
+                Hugging Face MTEB 리더보드 1위
+              </span>
+              를 기록한 검증된 기술로
+            </div>
+            <div>한 단계 더 업그레이드된 답변을 제공합니다</div>
+          </div>
         </div>
+        <OrangeButton classname="font-semibold my-15 flex items-center gap-3 text-[16px animate-slideInFromRight-1200">
+          무료 체험하기 <ArrowUp className="rotate-90" size={18} />
+        </OrangeButton>
       </Container>
 
       {/* part 2 */}
-      <div className="bg-[#ffebdc] ">
+      {/* <div className="bg-[#ffebdc] ">
         <Container>
-          {/* 텍스트 반응형 */}
           <div className="font-bold flex flex-col gap-2 pt-15 lg:text-2xl text-md sm:text-lg ">
             <div>Samil Accounting Insight는</div>
             <div>
@@ -46,7 +57,6 @@ export function IntroSection() {
             <div>전문적인 답변을 제공하는 생성형 AI입니다.</div>
           </div>
 
-          {/* 이미지 반응형 */}
           <div className="px-6 sm:px-10 lg:px-20 py-10 flex items-center justify-center ">
             <img
               src="/images/sample.webp"
@@ -55,16 +65,15 @@ export function IntroSection() {
             />
           </div>
         </Container>
-      </div>
+      </div> */}
 
       {/* part 3 */}
-      <Container>
+      {/* <Container>
         {FNSAMPLELIST.map((el, idx) => (
           <FunctionIntro key={idx} data={el} />
         ))}
 
-        <div>
-          {/* 제목들 반응형 폰트 크기 조절 */}
+        <div> 
           <H1Txt classname="my-7 lg:text-[30px] text-[20px] sm:text-[24px]">
             상용 LLM 으로 다양한 질의 처리 지원
           </H1Txt>
@@ -74,7 +83,6 @@ export function IntroSection() {
             가능합니다.
           </H1Txt>
 
-          {/* 버튼 그리드 반응형: 모바일 1~2열, 태블릿 3열, 데스크탑 4열 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
             {QUESTIONLIST.map((el: QuestionListType, idx: number) => (
               <OrangeButton
@@ -89,26 +97,9 @@ export function IntroSection() {
               </OrangeButton>
             ))}
           </div>
-
           <QnABox />
         </div>
-      </Container>
-
-      <div className="bg-[#FFCDA8] py-20">
-        <Container>
-          {/* 제목 반응형 */}
-          <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px] mb-8">
-            삼일 PwC의 보안 시스템 내에서 안전하게 이용
-          </H1Txt>
-
-          {/* 보안 박스 그리드 반응형 */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {SECURITYBOXLIST.map((el: SecurityBoxListType, idx: number) => (
-              <SecurityBox data={el} key={idx} />
-            ))}
-          </div>
-        </Container>
-      </div>
+      </Container> */}
     </div>
   );
 }

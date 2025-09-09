@@ -4,8 +4,8 @@ export const URL_LIST = [
     label: "AI 서비스",
   },
   {
-    url: "/#service2",
-    label: "이용 안내",
+    url: "/#Security",
+    label: "보안",
   },
   {
     url: "/price",

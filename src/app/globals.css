@@ -72,7 +72,7 @@
   /* 사용자 정으 애니메아션 파트 */
   --animate-fadeIn: fadeIn 1s ease-out forwards;
   --animate-slideInFromRight-1200: slideInFromRight 1.2s ease-out forwards;
-  --animate-slideInFromRight-1500: slideInFromRight 1.5s ease-out forwards;
+  --animate-slideInFromRight-1800: slideInFromRight 1.8s ease-out forwards;
 }
 
 @keyframes fadeIn {
@@ -107,4 +107,5 @@ body {
 
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }

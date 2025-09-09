@@ -1,7 +1,7 @@
 import { Button } from "@/components/atoms/button/button";
 import { URL_LIST, SUPPORT_LIST } from "@/constants/gnbList";
 import { cn } from "@/utils/cn";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -12,6 +12,15 @@ export function WebGnb() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const isSupportActive = SUPPORT_LIST.some((item) => item.url === pathname);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  console.log(pathname);
+
+  const handleClick = (e: React.MouseEvent) => {
+    if (pathname === "/") {
+      e.preventDefault(); // Link 기본 동작 막기
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     // close dropdown on route change
@@ -51,12 +60,12 @@ export function WebGnb() {
       <div className="flex w-full h-16 items-stretch justify-between">
         {/* 왼쪽: 로고 + 메뉴 */}
         <div className="flex h-full gap-3 items-stretch font-semibold">
-          <Link href={"/"}>
+          <Link href={"/"} onClick={handleClick}>
             <div className="flex items-center mr-5 h-full">
               <Image
                 src={"/images/logo.svg"}
                 alt="logoImg"
-                width={60}
+                width={300}
                 height={36}
                 className="-translate-y-px"
               />
@@ -143,7 +152,9 @@ export function WebGnb() {
 
         {/* 오른쪽: 이용문의 버튼 */}
         <div className="flex items-center gap-3">
-          <Button variant="outline">로그인</Button>
+          <Button variant="link">
+            서비스 바로가기 <ExternalLink />
+          </Button>
           <Button variant="default">무료 체험하기</Button>
         </div>
       </div>
