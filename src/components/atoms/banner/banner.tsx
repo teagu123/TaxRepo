@@ -21,20 +21,5 @@ export default function Banner() {
         </div>
       </div>
     </>
-    // <div className="bg-gray-100 flex items-center justify-center overflow-hidden">
-    //   {/* <img
-    //     src={"/images/bannerEx.png"}
-    //     alt="bannerImage"
-    //     className="object-contain w-full "
-    //   /> */}
-    //   <Image
-    //     src={"/images/main.jpg"}
-    //     alt="bannerImage"
-    //     width={100}
-    //     height={100}
-    //     className="object-contain w-full"
-    //   />
-    //   삼일회계법인이 만든 세무전문 AI Agent
-    // </div>
   );
 }

@@ -1,14 +1,14 @@
 export const URL_LIST = [
   {
     url: "/#service",
-    label: "AI 서비스",
+    label: "TAX AI 소개",
   },
   {
     url: "/#Security",
     label: "보안",
   },
   {
-    url: "/price",
+    url: "/#price",
     label: "요금 안내",
   },
 ];

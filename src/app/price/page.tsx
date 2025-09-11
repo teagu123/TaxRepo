@@ -1,4 +1,3 @@
-import OrangeButton from "@/components/atoms/button/orangeButton";
 import H1Txt from "@/components/atoms/H1Txt/H1Txt";
 import { Container } from "@/components/Template";
 import Image from "next/image";

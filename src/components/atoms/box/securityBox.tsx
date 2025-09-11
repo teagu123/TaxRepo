@@ -5,13 +5,15 @@ import { SecurityBoxListType } from "@/constants/securityBoxList";
 export default function SecurityBox({ data }: { data: SecurityBoxListType }) {
   return (
     <div className="bg-white rounded-xl p-7 flex flex-col justify-items-center items-center mt-10">
-      <Image
-        src={data.image}
-        alt="iconsSample"
-        width={80}
-        height={80}
-        className="mb-3"
-      />
+      <div className="w-[80px] h-[90px] flex items-end">
+        <Image
+          src={data.image}
+          alt="iconsSample"
+          width={80}
+          height={80}
+          className="mb-3"
+        />
+      </div>
 
       <H1Txt>{data.title}</H1Txt>
 

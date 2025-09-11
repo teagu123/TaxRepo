@@ -3,7 +3,7 @@ import { cn } from "@/utils/cn";
 
 // Base styles shared by all variants/sizes
 const baseClasses =
-  "cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-pwc-orange-400 focus-visible:ring-pwc-orange-400/50 focus-visible:ring-[3px] aria-invalid:ring-pwc-red/20 dark:aria-invalid:ring-pwc-red/40 aria-invalid:border-pwc-red";
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-pwc-orange-400 focus-visible:ring-pwc-orange-400/50 focus-visible:ring-[3px] aria-invalid:ring-pwc-red/20 dark:aria-invalid:ring-pwc-red/40 aria-invalid:border-pwc-red";
 
 // Variant class maps
 const variantClasses = {
@@ -15,7 +15,7 @@ const variantClasses = {
   secondary:
     "bg-pwc-gray-100 text-pwc-text-grey shadow-xs hover:bg-pwc-gray-200",
   ghost: "text-pwc-text-grey hover:bg-pwc-gray-50",
-  link: "text-pwc-orange-500 underline-offset-4 hover:text-pwc-orange-400 border-1 border-pwc-orange-400",
+  link: "text-pwc-orange-500 underline-offset-4 hover:text-pwc-orange-400 hover:underline",
 } as const;
 
 // Size class maps
