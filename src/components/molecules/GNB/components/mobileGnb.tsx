@@ -54,7 +54,7 @@ export function MobileGnb() {
       <div className="h-16 px-5 flex items-center justify-between">
         <Link href={"/"}>
           <Image
-            src={"/images/logo.svg"}
+            src={"/images/logo/logo.svg"}
             alt="logoImg"
             width={60}
             height={40}

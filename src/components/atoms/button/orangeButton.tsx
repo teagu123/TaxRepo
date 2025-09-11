@@ -11,10 +11,9 @@ export default function OrangeButton({
 }) {
   return (
     <div
-      className={` px-7 py-1.5 text-white rounded-[30px] text-[13px] max-w-fit
- cursor-pointer ${classname} ${
-        isDisable ? "bg-gray-400" : " bg-pwc-orange-500"
-      } hover:bg-pwc-orange-400`}
+      className={` px-3 py-1.5 text-white rounded-[5px] text-[13px]  cursor-pointer ${classname} ${
+        isDisable ? "bg-gray-400" : " bg-taxAi-orange"
+      }`}
     >
       {children}
     </div>

@@ -1,41 +1,33 @@
 "use client";
 
-import { IntroSection, SecuritySection } from "@/components/molecules/Landing";
-import { IntroImageSection } from "@/components/molecules/Landing/introImageSection";
-import { motion } from "framer-motion";
-import { useRef } from "react";
+import {
+  IntroImageSection,
+  IntroSection,
+  PriceSection,
+  SecuritySection,
+  SupportingDocs,
+} from "@/components/molecules/Landing";
 
 export default function Home() {
-  const ref1 = useRef(null);
-
   return (
     <div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-      >
-        <section id="service">
-          <IntroSection />
-        </section>
-      </motion.div>
+      {/* Intro 파트(?) */}
+      <section id="service">
+        <IntroSection />
+        <IntroImageSection />
+      </section>
 
-      <IntroImageSection />
+      <section id="docs">
+        <SupportingDocs />
+      </section>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-        transition={{
-          ease: "easeInOut",
-          duration: 2,
-          x: { duration: 1 },
-        }}
-      >
-        <section id="Security">
-          <SecuritySection />
-        </section>
-      </motion.div>
+      <section id="Security">
+        <SecuritySection />
+      </section>
+
+      <section id="price">
+        <PriceSection />
+      </section>
     </div>
   );
 }
