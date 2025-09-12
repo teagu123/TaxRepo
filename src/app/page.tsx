@@ -7,7 +7,6 @@ import {
   SecuritySection,
   WhyChooseTax,
 } from "@/components/molecules/Landing";
-import { Container } from "@/components/Template";
 
 export default function Home() {
   return (
@@ -20,10 +19,6 @@ export default function Home() {
         <WhyChooseTax />
       </section>
       <section id="docs" className="mt-60">
-        <Container>
-          <div className="text-[28px] font-medium">Key Feature</div>
-        </Container>
-
         <KeyFeaturesSection />
       </section>
 

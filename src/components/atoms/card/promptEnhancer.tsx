@@ -22,7 +22,6 @@ export function PromptEnhancer({ IMAGES }: { IMAGES: string[] }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: index >= i ? 1 : 0 }} // 현재 index 이상이면 보이게
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="absolute"
         >
           <Image
             src={src}
