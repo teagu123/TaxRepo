@@ -1,12 +1,13 @@
 "use client";
 
 import {
-  IntroImageSection,
   IntroSection,
+  KeyFeaturesSection,
   PriceSection,
   SecuritySection,
-  SupportingDocs,
+  WhyChooseTax,
 } from "@/components/molecules/Landing";
+import { Container } from "@/components/Template";
 
 export default function Home() {
   return (
@@ -14,11 +15,16 @@ export default function Home() {
       {/* Intro 파트(?) */}
       <section id="service">
         <IntroSection />
-        <IntroImageSection />
       </section>
+      <section id="docs" className="mt-60">
+        <WhyChooseTax />
+      </section>
+      <section id="docs" className="mt-60">
+        <Container>
+          <div className="text-[28px] font-medium">Key Feature</div>
+        </Container>
 
-      <section id="docs">
-        <SupportingDocs />
+        <KeyFeaturesSection />
       </section>
 
       <section id="Security">

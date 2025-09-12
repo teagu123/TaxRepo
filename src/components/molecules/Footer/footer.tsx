@@ -1,19 +1,20 @@
 import OrangeButton from "@/components/atoms/button/orangeButton";
 import H1Txt from "@/components/atoms/H1Txt/H1Txt";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <div>
-      <div className="bg-gray-100 py-20 flex flex-col items-center">
-        <H1Txt classname="text-[20px] md:text-[30px]">
-          AI 회계 전문가가 필요하신가요?
+      <div className="bg-gray-100 pb-10 flex flex-col items-center">
+        <H1Txt classname="text-[20px] py-10">
+          당신을 위한 AI 세무 전문가를 지금 바로 만나보세요
         </H1Txt>
-        <div className="text-[16px] md:text-[20px] my-10 text-center mx-5 md:mx-0">
-          이용 문의를 통해 Samil Accounting Insight를 더 자세히 알아보세요.
-        </div>
-        <OrangeButton classname="text-[20px] font-bold">이용 문의</OrangeButton>
+
+        <OrangeButton classname="p-10 flex items-center gap-1">
+          <div>무료 체험하기</div> <ArrowRight size={13} className="mb-1" />
+        </OrangeButton>
       </div>
       <div className=" flex justify-center py-5">
         <div className="max-w-7xl w-full px-10 flex flex-col md:flex-row items-center gap-20">

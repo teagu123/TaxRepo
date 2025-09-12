@@ -1,5 +1,5 @@
 export * from "./introSection";
 export * from "./securitySection";
-export * from "./introImageSection";
-export * from "./supportingDocs";
+export * from "./whyChooseTax";
 export * from "./priceSection";
+export * from "./keyFeaturesSection";

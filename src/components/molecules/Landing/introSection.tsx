@@ -18,42 +18,39 @@ export function IntroSection() {
     >
       <div>
         <Container>
-          <div className="text-xl text-[#222C40] leading-8  mt-10 ">
-            <div className="font-semibold text-[35px] mt-10">
+          <div className="text-xl text-[#222C40] leading-8  mt-30 text-center">
+            <div className="font-semibold text-[36px] mt-10">
               삼일회계법인이 만든 세무 전문 AI Agent
             </div>
             <div className="mt-10">
               <div>
-                삼일회계법인이 직접 선별한
                 <span className="relative">
-                  세무 데이터
+                  Tax Agent
                   <span className="absolute left-0 right-0 bottom-0.5 h-2.5 bg-pwc-orange-100 -z-10"></span>
                 </span>
-                와
+                는 삼일회계법인이 보유한 세법관련 Data를 기반으로
               </div>
+              <div>최상의 자연어 검색 알고리즘을 탑재한 생성형 AI를 통해</div>
               <div className="mb-[24px]">
-                <span className="relative">
-                  자체 개발 검색 알고리즘
-                  <span className="absolute left-0 right-0 bottom-0.5 h-2.5 bg-pwc-orange-100 -z-10"></span>
-                </span>
-                으로 구현한 AI 솔루션을 경험해보세요.
+                자유롭게 질문하고 신속하게 전문적 답변을 제공받을 수 있습니다.
               </div>
-            </div>
-            <div>
-              <div>
-                <span className="font-semibold">
-                  Hugging Face MTEB 리더보드 1위
-                </span>
-                를 기록한 검증된 기술로
-              </div>
-              <div>한 단계 더 업그레이드된 답변을 제공합니다</div>
+              <div></div>
             </div>
           </div>
-          <div className="flex">
-            <OrangeButton classname="font-semibold my-15 flex items-center gap-3">
+          <div className="flex justify-center">
+            <OrangeButton classname="font-semibold my-10  flex items-center gap-3">
               무료 체험하기 <ArrowUp className="rotate-90" size={18} />
             </OrangeButton>
           </div>
+          <video
+            src="/video/intro.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls={false}
+            className="w-full rounded-xl border-2 border-pwc-gray-100"
+          />
         </Container>
       </div>
     </motion.div>
