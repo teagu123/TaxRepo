@@ -17,7 +17,7 @@ export function SupportingDocs() {
             viewport={{ once: false }}
             transition={{
               ease: "easeInOut",
-              duration: 1.5,
+              duration: 0.5,
               x: { duration: 1 },
             }}
             key={el.title}
@@ -33,22 +33,33 @@ export function SupportingDocs() {
             </div>
           </motion.div>
         ))}
-        <div className="grid grid-cols-2 gap-3">
-          {SUPPORTING_GRID_LIST.map((src) => (
-            <div
-              key={src}
-              className="relative aspect-square overflow-hidden rounded-lg"
-            >
-              <Image
-                src={src}
-                alt="grid-img"
-                fill
-                className="object-container"
-                sizes="50vw"
-              />
-            </div>
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.5,
+            x: { duration: 1 },
+          }}
+        >
+          <div className="grid grid-cols-2 gap-x-6 mt-10 ">
+            {SUPPORTING_GRID_LIST.map((src) => (
+              <div
+                key={src}
+                className="relative aspect-square overflow-hidden rounded-lg"
+              >
+                <Image
+                  src={src}
+                  alt="grid-img"
+                  fill
+                  className="object-contain"
+                  sizes="50vw"
+                />
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </Container>
     </div>
   );
