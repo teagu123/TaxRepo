@@ -1,5 +1,8 @@
 import { Container } from "@/components/Template";
-import { SUPPORTING_DOCS_LIST } from "@/constants/supportingDocsList";
+import {
+  SUPPORTING_DOCS_LIST,
+  SUPPORTING_GRID_LIST,
+} from "@/constants/supportingDocsList";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -30,6 +33,22 @@ export function SupportingDocs() {
             </div>
           </motion.div>
         ))}
+        <div className="grid grid-cols-2 gap-3">
+          {SUPPORTING_GRID_LIST.map((src) => (
+            <div
+              key={src}
+              className="relative aspect-square overflow-hidden rounded-lg"
+            >
+              <Image
+                src={src}
+                alt="grid-img"
+                fill
+                className="object-container"
+                sizes="50vw"
+              />
+            </div>
+          ))}
+        </div>
       </Container>
     </div>
   );

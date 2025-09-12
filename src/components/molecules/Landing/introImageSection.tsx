@@ -194,5 +194,6 @@ export function IntroImageSection() {
         </div>
       </div>
     </motion.div>
+    //
   );
 }
