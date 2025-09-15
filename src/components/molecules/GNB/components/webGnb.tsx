@@ -70,13 +70,11 @@ export function WebGnb() {
             </div>
           </Link>
           {URL_LIST.map((el, idx) => {
-            const isActive = pathname === el.url && pathname !== "/";
             return (
               <Link href={el.url} key={idx}>
                 <div
                   className={cn(
-                    "relative px-3 inline-flex cursor-pointer h-full items-center text-gray-900 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-orange-500 after:transition-transform after:duration-200 hover:after:scale-x-100",
-                    isActive ? "after:scale-x-100" : ""
+                    "relative px-3 inline-flex cursor-pointer h-full items-center text-gray-900 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-orange-500 after:transition-transform after:duration-200 hover:after:scale-x-100"
                   )}
                 >
                   {el.label}

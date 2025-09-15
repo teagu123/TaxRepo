@@ -13,14 +13,6 @@ export function PriceSection() {
           요금 안내
         </H1Txt>
 
-        <div className="mb-8 rounded-xl  px-5 py-4 text-sm leading-6 text-[color:var(--color-pwc-text-grey)]">
-          <p>Tax Agent를 사용하기 위해서는 Credit이 필요합니다.​</p>
-          <p className="mt-2">
-            법인별로 이용패턴에 맞는 요금제를 선택하시고 법인 내에서 사용자 수
-            제한없이 자유롭게 사용하세요​
-          </p>
-        </div>
-
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -31,13 +23,27 @@ export function PriceSection() {
             x: { duration: 1 },
           }}
         >
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-5">
             {PRICE_LIST.map((p) => (
               <PriceCard key={p.name} plan={p} />
             ))}
           </div>
-          <PriceBespokeCard />
         </motion.div>
+
+        <div className=" text-center text-[#8B91A0] my-10 flex flex-col gap-3">
+          <div>
+            계약기간 중 크레딧 충전이 필요한 경우 100 크레딧 단위로 충전할 수
+            있고, 100 크레딧 당 가격은 150,000원입니다.
+          </div>
+          <div>
+            충전된 크레딧은 질의내용을 분석하고 답변을 산출하는 과정에서
+            사용되는 AI 모델별 토큰 사용량에 따라 차감됩니다.
+          </div>
+          <div>
+            질의내용에 따른 편차가 존재하나, 평균적으로 1 Credit 당 0.5 ~
+            1.5개의 질의답변이 가능합니다.
+          </div>
+        </div>
       </Container>
     </div>
   );

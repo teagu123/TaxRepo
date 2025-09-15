@@ -15,7 +15,7 @@ export function PromptEnhancer({ IMAGES }: { IMAGES: string[] }) {
   }, []);
 
   return (
-    <div className="relative w-full h-full flex items-center justify-center">
+    <div className="relative  w-full h-full  ">
       {IMAGES.map((src, i) => (
         <motion.div
           key={i}
@@ -26,9 +26,10 @@ export function PromptEnhancer({ IMAGES }: { IMAGES: string[] }) {
           <Image
             src={src}
             alt={`grid img ${i}`}
-            width={1500}
-            height={1500}
+            width={1400}
+            height={1400}
             priority={i === 0}
+            className="absolute"
           />
         </motion.div>
       ))}

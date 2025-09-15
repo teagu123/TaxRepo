@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <div>
       {/* Intro 파트(?) */}
-      <section id="service">
+      <section id="About">
         <IntroSection />
       </section>
-      <section id="docs" className="mt-60">
+      <section id="WhyUs" className="mt-60">
         <WhyChooseTax />
       </section>
-      <section id="docs" className="mt-60">
+      <section id="Features" className="mt-60">
         <KeyFeaturesSection />
       </section>
 
@@ -26,7 +26,7 @@ export default function Home() {
         <SecuritySection />
       </section>
 
-      <section id="price">
+      <section id="Pricing">
         <PriceSection />
       </section>
     </div>

@@ -12,7 +12,7 @@ export default function Footer() {
           당신을 위한 AI 세무 전문가를 지금 바로 만나보세요
         </H1Txt>
 
-        <OrangeButton classname="p-10 flex items-center gap-1">
+        <OrangeButton classname="p-10 flex items-center gap-1 text-[16px]">
           <div>무료 체험하기</div> <ArrowRight size={13} className="mb-1" />
         </OrangeButton>
       </div>
