@@ -17,7 +17,7 @@ export const URL_LIST = [
   },
   {
     url: "/#Pricing",
-    label: "요금제",
+    label: "요금 안내",
   },
 ];
 

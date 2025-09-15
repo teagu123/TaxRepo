@@ -104,7 +104,7 @@
 html,
 body {
   font-family: var(--font-helvetica-neue), var(--font-noto-sans), sans-serif !important;
-
+  background-color: var(--color-pwc-gray-50);
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;

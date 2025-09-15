@@ -8,7 +8,7 @@ export function PriceCard({ plan }: { plan: PriceListType }) {
     <article
       className={`p-5 flex h-full flex-col gap-5 hover:scale-105 transition-transform duration-300 shadow-md justify-between overflow-hidden rounded-2xl ${
         plan.name === "Standard" && "border-2"
-      }  bg-pwc-white border-pwc-orange-500 cursor-pointer`}
+      } bg-pwc-white border-pwc-orange-500`}
       aria-label={`${plan.name} 요금 카드`}
     >
       <div className="flex  justify-between items-center ">

@@ -53,7 +53,7 @@ export function WebGnb() {
   }, [isDropdownOpen]);
 
   return (
-    <div className="hidden md:flex h-16 bg-white border-b-1 border-b-pwc-gray-200 fixed top-0 left-0 right-0 z-50 px-10 lg:px-20">
+    <div className="hidden lg:flex h-16 bg-white border-b-1 border-b-pwc-gray-200 fixed top-0 left-0 right-0 z-50 px-3 xl:px-20">
       {/* PC 이상에서는 flex 한 줄 */}
       <div className="flex w-full h-16 items-stretch justify-between">
         {/* 왼쪽: 로고 + 메뉴 */}
@@ -65,7 +65,7 @@ export function WebGnb() {
                 alt="logoImg"
                 width={300}
                 height={36}
-                className="-translate-y-px"
+                className="-translate-y-px min-w-[300px]"
               />
             </div>
           </Link>

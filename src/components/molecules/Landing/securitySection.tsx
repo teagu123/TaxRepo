@@ -21,11 +21,11 @@ export function SecuritySection() {
     >
       <div className="py-20">
         <Container>
-          <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px] mb-8">
+          <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px]  ">
             삼일 PWC의 보안 시스템 내에서 안전하게 이용
           </H1Txt>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 text-center">
             {SECURITYBOXLIST.map((el: SecurityBoxListType, idx: number) => (
               <SecurityBox data={el} key={idx} />
             ))}

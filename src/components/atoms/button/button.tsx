@@ -44,7 +44,13 @@ export function buttonVariants({
   size?: ButtonSize;
   className?: string;
 }) {
-  return cn(baseClasses, variantClasses[variant], sizeClasses[size], className);
+  return cn(
+    baseClasses,
+    variantClasses[variant],
+    sizeClasses[size],
+    className,
+    "cursor-pointer"
+  );
 }
 
 export function Button({

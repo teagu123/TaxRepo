@@ -6,11 +6,11 @@ import H1Txt from "@/components/atoms/H1Txt/H1Txt";
 export function KeyFeaturesSection() {
   return (
     <div>
-      <Container className="flex flex-col gap-10">
-        <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px]  ">
+      <Container className="flex flex-col gap-0 md:gap-10">
+        <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px]  mb-10 md:mb-0">
           Key Features
         </H1Txt>
-        {KEY_FEATURE_LIST.map((el) => (
+        {KEY_FEATURE_LIST.map((el, idx) => (
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -23,12 +23,14 @@ export function KeyFeaturesSection() {
             key={el.title}
           >
             <div
-              className="flex flex-col md:flex-row min-h-140 justify-between "
+              className={`flex flex-col md:flex-row min-h-[480px]  justify-between`}
               key={el.title}
             >
-              <div className="md:flex-1 pr-3  mb-3 md:mb-0">
-                <div className="text-[24px] font-medium ">{el.title}</div>
-                <div className="w-full whitespace-pre-line text-[18px] mt-3">
+              <div className="md:flex-1 p-3  mb-3 md:mb-0 flex flex-col justify-center">
+                <div className="text-[18px] md:text-[24px] font-medium">
+                  {el.title}
+                </div>
+                <div className="w-full whitespace-pre-line text-[15px] md:text-[18px] mt-3">
                   {el.description}
                 </div>
               </div>

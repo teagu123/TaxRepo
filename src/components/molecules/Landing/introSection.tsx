@@ -18,8 +18,8 @@ export function IntroSection() {
     >
       <div>
         <Container>
-          <div className="text-xl text-[#222C40] leading-8  mt-30 text-center">
-            <div className="font-semibold text-[36px] mt-10">
+          <div className="text-lg md:text-xl text-[#222C40] leading-8  mt-30 text-center">
+            <div className="font-semibold text-[30px] md:text-[36px] mt-10">
               삼일회계법인이 만든 세무 전문 AI Agent
             </div>
             <div className="mt-10">
@@ -38,8 +38,8 @@ export function IntroSection() {
             </div>
           </div>
           <div className="flex justify-center">
-            <OrangeButton classname="font-semibold my-10  flex items-center gap-3">
-              무료 체험하기 <ArrowUp className="rotate-90" size={18} />
+            <OrangeButton classname="font-medium my-10 text-[16px] md:text-[20px]  flex items-center gap-3">
+              무료 체험하기 <ArrowUp className="rotate-90" size={22} />
             </OrangeButton>
           </div>
           <video

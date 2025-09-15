@@ -49,7 +49,7 @@ export function MobileGnb() {
   };
 
   return (
-    <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-white border-b-1 border-b-pwc-gray-200">
+    <div className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-white border-b-1 border-b-pwc-gray-200">
       {/* Top bar */}
       <div className="h-16 px-5 flex items-center justify-between">
         <Link href={"/"}>
@@ -58,10 +58,15 @@ export function MobileGnb() {
             alt="logoImg"
             width={60}
             height={40}
+            className="min-w-50"
           />
         </Link>
         <div className="flex items-center gap-2">
-          <Button variant="default" className="whitespace-nowrap">
+          <Button
+            variant="default"
+            size="sm"
+            className="whitespace-nowrap text-[12px]"
+          >
             무료 체험하기
           </Button>
           <button

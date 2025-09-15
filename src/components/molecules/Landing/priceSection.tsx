@@ -1,4 +1,3 @@
-import { PriceBespokeCard } from "@/components/atoms/card/priceBespokeCard";
 import { PriceCard } from "@/components/atoms/card/priceCard";
 import H1Txt from "@/components/atoms/H1Txt/H1Txt";
 import { Container } from "@/components/Template";
@@ -7,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function PriceSection() {
   return (
-    <div className="py-20">
+    <div className="py-20 bg-pwc-orange-100">
       <Container>
         <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px] mb-8">
           요금 안내
@@ -30,7 +29,7 @@ export function PriceSection() {
           </div>
         </motion.div>
 
-        <div className=" text-center text-[#8B91A0] my-10 flex flex-col gap-3">
+        <div className=" text-center text-[#8B91A0] my-10 flex flex-col gap-3 text-[13px] md:text-[16px]">
           <div>
             계약기간 중 크레딧 충전이 필요한 경우 100 크레딧 단위로 충전할 수
             있고, 100 크레딧 당 가격은 150,000원입니다.
