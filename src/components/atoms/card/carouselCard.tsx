@@ -97,11 +97,11 @@ export default function TaxLawsMarquee() {
   const [row1, row2, row3] = splitIntoRows(laws, 3);
 
   return (
-    <section className="w-full bg-pwc-black py-8 md:py-12 rounded-3xl relative overflow-hidden shadow-[inset_60px_0_60px_-40px_rgba(100,100,100,0.25),inset_-60px_0_60px_-40px_rgba(100,100,100,0.25)]">
+    <section className=" bg-pwc-black py-8 md:py-12 rounded-3xl  overflow-hidden shadow-[inset_60px_0_60px_-40px_rgba(100,100,100,0.25),inset_-60px_0_60px_-40px_rgba(100,100,100,0.25)]">
       {/* <div className="text-pwc-white text-center mb-10 text-[30px] font-medium">
         최신 법령 예규 판례 학습
       </div> */}
-      <div className="mx-auto max-w-5xl space-y-4 md:space-y-6 px-4">
+      <div className="mx-auto max-w-xl space-y-4 md:space-y-6 px-4">
         <InfiniteMarqueeRow items={row1} direction="left" speed={110} />
         <InfiniteMarqueeRow items={row2} direction="right" speed={110} />
         <InfiniteMarqueeRow items={row3} direction="left" speed={110} />

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { KEY_FEATURE_LIST } from "@/constants/keyFeaturesList";
 import { PromptEnhancer } from "@/components/atoms/card/promptEnhancer";
 import H1Txt from "@/components/atoms/H1Txt/H1Txt";
+import TaxLawsMarquee from "@/components/atoms/card/carouselCard";
 export function KeyFeaturesSection() {
   return (
     <div>
@@ -34,14 +35,18 @@ export function KeyFeaturesSection() {
                   {el.description}
                 </div>
               </div>
-              <div className="flex-1">
-                <PromptEnhancer
-                  IMAGES={[
-                    "/images/supportingdocs/grid2.svg",
-                    "/images/supportingdocs/grid3.svg",
-                    "/images/supportingdocs/grid4.svg",
-                  ]}
-                />
+              <div className="flex-1  flex items-center justify-center">
+                {idx === 0 ? (
+                  <TaxLawsMarquee />
+                ) : (
+                  <PromptEnhancer
+                    IMAGES={[
+                      "/images/supportingdocs/test.svg",
+                      "/images/supportingdocs/test2.svg",
+                      "/images/supportingdocs/test3.svg",
+                    ]}
+                  />
+                )}
               </div>
             </div>
           </motion.div>
