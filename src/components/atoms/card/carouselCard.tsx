@@ -51,7 +51,7 @@ export function InfiniteMarqueeRow({
             className="flex-shrink-0 whitespace-nowrap rounded-full border border-pwc-gray-400
                        bg-white/10 backdrop-blur-sm 
                        px-4 py-2 text-sm md:text-base text-pwc-white 
-                       transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_12px_rgba(255,255,255,0.2)]"
+                       transition-transform duration-300 "
             style={{ marginRight: gap }}
             aria-hidden={i >= items.length}
           >

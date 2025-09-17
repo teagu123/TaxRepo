@@ -37,10 +37,6 @@ export function PromptEnhancer({ IMAGES }: { IMAGES: string[] }) {
           />
         </motion.div>
       ))}
-
-      <div className="absolute right-3 top-3 rounded-full bg-black/40 text-white px-3 py-1 text-xs md:text-sm backdrop-blur">
-        {index + 1} / {IMAGES.length}
-      </div>
     </div>
   );
 }
