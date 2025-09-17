@@ -67,7 +67,7 @@ export function MobileGnb() {
             size="sm"
             className="whitespace-nowrap text-[12px]"
           >
-            무료 체험하기
+            2주 무료 체험하기
           </Button>
           <button
             type="button"

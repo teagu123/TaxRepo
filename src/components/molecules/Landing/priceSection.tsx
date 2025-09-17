@@ -9,7 +9,7 @@ export function PriceSection() {
     <div className="py-20 bg-pwc-orange-100">
       <Container>
         <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px] mb-8">
-          요금 안내
+          요금 안내 (법인 고객용)
         </H1Txt>
 
         <motion.div
@@ -27,22 +27,34 @@ export function PriceSection() {
               <PriceCard key={p.name} plan={p} />
             ))}
           </div>
-        </motion.div>
 
-        <div className=" text-center text-[#8B91A0] my-10 flex flex-col gap-3 text-[13px] md:text-[16px]">
-          <div>
-            계약기간 중 크레딧 충전이 필요한 경우 100 크레딧 단위로 충전할 수
-            있고, 100 크레딧 당 가격은 150,000원입니다.
+          <div className="mt-[48px] bg-pwc-gray-50 p-5 rounded-lg text-[15px] flex flex-col gap-3">
+            <div className="border-b-1 border-pwc-gray-200 grid grid-cols-12 pb-3">
+              <div className="font-bold mr-3 col-span-4">
+                Q. 계약기간 중 크레딧을 모두 소진하면 충전할 수 있나요?
+              </div>
+              <div className="col-span-8">
+                A. 계약기간 중 크레딧 충전이 필요한 경우 100 크레딧 단위로
+                충전할 수 있고, 100 크레딧 당 가격은 150,000원입니다.
+              </div>
+            </div>
+            <div className="grid grid-cols-12">
+              <div className="font-bold mr-3 col-span-4">
+                Q. 충전된 크레딧은 어떻게 사용되나요?
+              </div>
+              <div className="col-span-8">
+                <div>
+                  A. 충전된 크레딧은 질의내용을 분석하고 답변을 산출하는
+                  과정에서 사용되는 AI 모델별 토큰 사용량에 따라 차감됩니다.
+                </div>
+                <div className="text-[14px] ml-4 text-pwc-black/50">
+                  (질의내용에 따른 편차가 존재하나, 평균적으로 1 Credit 당 0.5 ~
+                  1.5개의 질의답변이 가능합니다.)
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            충전된 크레딧은 질의내용을 분석하고 답변을 산출하는 과정에서
-            사용되는 AI 모델별 토큰 사용량에 따라 차감됩니다.
-          </div>
-          <div>
-            질의내용에 따른 편차가 존재하나, 평균적으로 1 Credit 당 0.5 ~
-            1.5개의 질의답변이 가능합니다.
-          </div>
-        </div>
+        </motion.div>
       </Container>
     </div>
   );

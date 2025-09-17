@@ -15,7 +15,7 @@ export default function Home() {
       <section id="About">
         <IntroSection />
       </section>
-      <section id="WhyUs" className="mt-60">
+      <section className="mt-60">
         <WhyChooseTax />
       </section>
       <section id="Features" className="mt-60">

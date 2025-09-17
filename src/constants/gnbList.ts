@@ -1,11 +1,7 @@
 export const URL_LIST = [
   {
     url: "/#About",
-    label: "서비스 소개",
-  },
-  {
-    url: "/#WhyUs",
-    label: "선택 이유",
+    label: "Tax Agent 사용하기",
   },
   {
     url: "/#Features",

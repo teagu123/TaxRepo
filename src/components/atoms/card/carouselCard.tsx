@@ -97,7 +97,7 @@ export default function TaxLawsMarquee() {
   const [row1, row2, row3] = splitIntoRows(laws, 3);
 
   return (
-    <section className=" bg-pwc-black py-8 md:py-12 rounded-3xl  overflow-hidden shadow-[inset_60px_0_60px_-40px_rgba(100,100,100,0.25),inset_-60px_0_60px_-40px_rgba(100,100,100,0.25)]">
+    <section className=" bg-[#303236] py-8 md:py-12 rounded-3xl  overflow-hidden shadow-[inset_60px_0_60px_-40px_rgba(100,100,100,0.25),inset_-60px_0_60px_-40px_rgba(100,100,100,0.25)]">
       {/* <div className="text-pwc-white text-center mb-10 text-[30px] font-medium">
         최신 법령 예규 판례 학습
       </div> */}

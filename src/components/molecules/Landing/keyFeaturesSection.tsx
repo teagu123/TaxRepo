@@ -31,7 +31,7 @@ export function KeyFeaturesSection() {
                 <div className="text-[18px] md:text-[24px] font-medium">
                   {el.title}
                 </div>
-                <div className="w-full whitespace-pre-line text-[15px] md:text-[18px] mt-3">
+                <div className="w-full whitespace-pre-line text-[15px] md:text-[18px] mt-3 ">
                   {el.description}
                 </div>
               </div>
@@ -39,13 +39,7 @@ export function KeyFeaturesSection() {
                 {idx === 0 ? (
                   <TaxLawsMarquee />
                 ) : (
-                  <PromptEnhancer
-                    IMAGES={[
-                      "/images/supportingdocs/test.svg",
-                      "/images/supportingdocs/test2.svg",
-                      "/images/supportingdocs/test3.svg",
-                    ]}
-                  />
+                  <PromptEnhancer IMAGES={el.supportImg ?? []} />
                 )}
               </div>
             </div>

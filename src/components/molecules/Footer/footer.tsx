@@ -18,7 +18,8 @@ export default function Footer() {
             이용문의
           </Button>
           <Button className="text-[18px]">
-            <div>무료 체험하기</div> <ArrowRight size={13} className="mb-1" />
+            <div>2주 무료 체험하기</div>
+            <ArrowRight size={13} className="mb-1" />
           </Button>
         </div>
       </div>

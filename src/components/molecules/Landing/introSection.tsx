@@ -1,6 +1,6 @@
 import { Container } from "@/components/Template";
 import OrangeButton from "@/components/atoms/button/orangeButton";
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Megaphone } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function IntroSection() {
@@ -24,7 +24,7 @@ export function IntroSection() {
             </div>
             <div className="mt-10">
               <div>
-                <span className="relative">
+                <span className="relative text-pwc-orange-500">
                   Tax Agent
                   <span className="absolute left-0 right-0 bottom-0.5 h-2.5 bg-pwc-orange-100 -z-10"></span>
                 </span>
@@ -38,15 +38,34 @@ export function IntroSection() {
             </div>
           </div>
           <div className="flex justify-center">
-            <OrangeButton classname="font-medium my-10 text-[16px] md:text-[20px]  flex items-center gap-3">
-              무료 체험하기 <ArrowUp className="rotate-90" size={22} />
+            <OrangeButton classname="font-medium my-10 text-[16px] md:text-[20px]  flex items-center gap-3 ">
+              2주 무료 체험하기 <ArrowUp className="rotate-90" size={22} />
             </OrangeButton>
           </div>
+
+          <div className="flex justify-center ">
+            <div
+              role="note"
+              aria-label="출시 기념 이벤트 안내"
+              className="
+             bg-pwc-orange-100 rounded-2xl flex p-3 items-center gap-5 justify-center mb-10 max-w-270 px-10 shadow-md
+            "
+            >
+              <div className="mt-0.5  rounded-full bg-white/60">
+                <Megaphone className="text-[#FF6000]" size={20} />
+              </div>
+              <p className="text-[14px] md:text-[16px]  text-[#3A2A1B] font-medium ">
+                출시 기념 무료체험 기간 연장 Event : 10월 중 무료체험을
+                신청하시고 11월 15일까지 Tax Agent를 무료로 사용해 보세요!
+              </p>
+            </div>
+          </div>
+
           <video
             src="/video/intro.mp4"
             autoPlay
-            muted
             loop
+            muted
             playsInline
             controls={false}
             className="w-full rounded-xl border-2 border-pwc-gray-100"

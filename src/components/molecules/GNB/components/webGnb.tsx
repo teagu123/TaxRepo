@@ -61,7 +61,7 @@ export function WebGnb() {
           <Link href={"/"} onClick={handleClick}>
             <div className="flex items-center mr-5 h-full">
               <Image
-                src={"/images/logo/logo.svg"}
+                src={"/images/logo/logo_withoutPwC.svg"}
                 alt="logoImg"
                 width={300}
                 height={36}
@@ -149,9 +149,9 @@ export function WebGnb() {
         {/* 오른쪽: 이용문의 버튼 */}
         <div className="flex items-center gap-3">
           <Button variant="link">
-            서비스 바로가기 <ExternalLink />
+            Tax Agent 사용하기 <ExternalLink />
           </Button>
-          <Button variant="default">무료 체험하기</Button>
+          <Button variant="default">2주 무료 체험하기</Button>
         </div>
       </div>
     </div>

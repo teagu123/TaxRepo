@@ -2,27 +2,30 @@ import { PriceListType } from "@/constants/priceList";
 import { div } from "framer-motion/client";
 import { Check } from "lucide-react";
 import { Button } from "../button/button";
+import Image from "next/image";
 
 export function PriceCard({ plan }: { plan: PriceListType }) {
   return (
     <article
-      className={`p-5 flex h-full flex-col gap-5 hover:scale-105 transition-transform duration-300 shadow-md justify-between overflow-hidden rounded-2xl ${
-        plan.name === "Standard" && "border-2"
-      } bg-pwc-white border-pwc-orange-500`}
+      className={`p-5 relative flex h-full flex-col gap-5 hover:scale-105 hover:shadow-pwc-orange-300 hover:shadow-xl transition-transform duration-300 shadow-md justify-between overflow-hidden rounded-2xl  bg-pwc-white`}
       aria-label={`${plan.name} 요금 카드`}
     >
-      <div className="flex  justify-between items-center ">
+      <div className="flex  justify-between items-center">
         <div className="font-bold">{plan.name}</div>
-        {plan.name === "Standard" && (
-          <div className="text-pwc-orange-500 text-[12px] bg-pwc-orange-100 px-1 font-medium">
-            추천
-          </div>
+        {plan.name === "Pro​" && (
+          <Image
+            src={"/images/priceImage/priceLabel.svg"}
+            alt="label"
+            width={50}
+            height={40}
+            className="absolute top-[-5px] right-2"
+          />
         )}
       </div>
 
       {plan.name === "Custom" ? (
         <span className="text-[32px]  text-pwc-black font-bold  leading-none ">
-          맞춤형
+          맞춤형 플랜
         </span>
       ) : (
         <div className=" flex items-end gap-2 text-[#8B91A0] text-[14px] ">
@@ -50,16 +53,17 @@ export function PriceCard({ plan }: { plan: PriceListType }) {
         className={`font-medium text-[14px] ${
           plan.name === "Custom" && "mt-4"
         }`}
-      >
-        {plan.checkList.map((el) => (
-          <div key={el} className="flex items-center">
-            <Check size={16} className="text-pwc-orange-500 mr-2" />
-            <div>{el}</div>
-          </div>
-        ))}
-      </div>
+      ></div>
 
-      {plan.name === "Custom" && <Button>이용문의</Button>}
+      {plan.name === "Custom" && (
+        <>
+          <div className="flex items-center">
+            <Check size={16} className="text-pwc-orange-500 mr-2" />
+            <div>맞춤형 가격 플랜</div>
+          </div>
+          <Button>이용문의</Button>
+        </>
+      )}
     </article>
   );
 }
