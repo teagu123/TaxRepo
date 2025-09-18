@@ -1,7 +1,7 @@
 export const URL_LIST = [
   {
-    url: "/#About",
-    label: "Tax Agent 사용하기",
+    url: "/#Intro",
+    label: "Tax Agent 소개",
   },
   {
     url: "/#Features",
@@ -14,20 +14,5 @@ export const URL_LIST = [
   {
     url: "/#Pricing",
     label: "요금 안내",
-  },
-];
-
-export const SUPPORT_LIST = [
-  {
-    url: "/notice",
-    label: "공지사항",
-  },
-  {
-    url: "/inquiry",
-    label: "문의등록",
-  },
-  {
-    url: "/faq",
-    label: "FAQ",
   },
 ];

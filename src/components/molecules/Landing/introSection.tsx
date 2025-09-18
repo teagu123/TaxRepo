@@ -2,6 +2,7 @@ import { Container } from "@/components/Template";
 import OrangeButton from "@/components/atoms/button/orangeButton";
 import { ArrowUp, Megaphone } from "lucide-react";
 import { motion } from "framer-motion";
+import { MS_FORM_URL } from "@/constants/redirect_url";
 
 export function IntroSection() {
   return (
@@ -61,15 +62,17 @@ export function IntroSection() {
             </div>
           </div>
 
-          <video
-            src="/video/intro.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls={false}
-            className="w-full rounded-xl border-2 border-pwc-gray-100"
-          />
+          <div className="w-full aspect-[1200/620]">
+            <video
+              src="/video/intro.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              className="w-full h-full rounded-xl border-2 border-pwc-gray-100 object-cover"
+            />
+          </div>
         </Container>
       </div>
     </motion.div>

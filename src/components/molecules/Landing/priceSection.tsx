@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 export function PriceSection() {
   return (
-    <div className="py-20 bg-pwc-orange-100">
+    <div className=" bg-pwc-orange-100 py-20">
       <Container>
-        <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px] mb-8">
+        <H1Txt classname="text-[28px] sm:text-[32px] lg:text-[36px] mb-6">
           요금 안내 (법인 고객용)
         </H1Txt>
 

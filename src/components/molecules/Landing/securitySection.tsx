@@ -19,9 +19,9 @@ export function SecuritySection() {
         x: { duration: 1 },
       }}
     >
-      <div className="py-20">
+      <div>
         <Container>
-          <H1Txt classname="text-[25px] sm:text-[28px] lg:text-[32px]  ">
+          <H1Txt classname="text-[28px] sm:text-[32px] lg:text-[36px] mb-2">
             삼일 PWC의 보안 시스템 내에서 안전하게 이용
           </H1Txt>
 

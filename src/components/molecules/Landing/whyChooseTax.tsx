@@ -9,8 +9,8 @@ export function WhyChooseTax() {
   return (
     <section>
       <Container className="flex flex-col gap-12 sm:gap-16">
-        <H1Txt classname="text-[24px] sm:text-[28px] lg:text-[32px] mb-2">
-          Why Choose Tax Agent
+        <H1Txt classname="text-[28px] sm:text-[32px] lg:text-[36px] mb-2">
+          AI도 삼일회계법인이 만들면 다릅니다.
         </H1Txt>
 
         <ul className="flex flex-col gap-12 sm:gap-16">

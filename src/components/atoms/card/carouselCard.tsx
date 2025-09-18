@@ -97,14 +97,12 @@ export default function TaxLawsMarquee() {
   const [row1, row2, row3] = splitIntoRows(laws, 3);
 
   return (
-    <section className=" bg-[#303236] py-8 md:py-12 rounded-3xl  overflow-hidden shadow-[inset_60px_0_60px_-40px_rgba(100,100,100,0.25),inset_-60px_0_60px_-40px_rgba(100,100,100,0.25)]">
-      {/* <div className="text-pwc-white text-center mb-10 text-[30px] font-medium">
-        최신 법령 예규 판례 학습
-      </div> */}
-      <div className="mx-auto max-w-xl space-y-4 md:space-y-6 px-4">
-        <InfiniteMarqueeRow items={row1} direction="left" speed={110} />
-        <InfiniteMarqueeRow items={row2} direction="right" speed={110} />
-        <InfiniteMarqueeRow items={row3} direction="left" speed={110} />
+    <section className=" relative bg-[#303236] h-full flex items-center rounded-3xl overflow-hidden [--edge:12%] ">
+      {/* 마키 전체 페이드 마스크 (to_right) */}{" "}
+      <div className=" mx-auto max-w-xl space-y-4 md:space-y-6  w-full [mask-image:linear-gradient(to_right,transparent_0%,#000_var(--edge),#000_calc(100%-var(--edge)),transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,#000_var(--edge),#000_calc(100%-var(--edge)),transparent_100%)] ">
+        <InfiniteMarqueeRow items={row1} direction="left" speed={110} />{" "}
+        <InfiniteMarqueeRow items={row2} direction="right" speed={110} />{" "}
+        <InfiniteMarqueeRow items={row3} direction="left" speed={110} />{" "}
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import { Button } from "@/components/atoms/button/button";
 import OrangeButton from "@/components/atoms/button/orangeButton";
 import H1Txt from "@/components/atoms/H1Txt/H1Txt";
+import { MS_FORM_URL } from "@/constants/redirect_url";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,9 +15,12 @@ export default function Footer() {
         </H1Txt>
 
         <div className="flex items-center gap-2">
-          <Button variant={"outline"} className="text-[18px]">
-            이용문의
-          </Button>
+          <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
+            <Button variant={"outline"} className="text-[18px]">
+              이용문의
+            </Button>
+          </a>
+
           <Button className="text-[18px]">
             <div>2주 무료 체험하기</div>
             <ArrowRight size={13} className="mb-1" />
