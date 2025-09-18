@@ -20,7 +20,7 @@ export const PRICE_LIST: PriceListType[] = [
   },
   {
     name: "Pro​",
-    credit: "10,000",
+    credit: "13,000",
     bonus: "30%",
     won: "1,500",
   },

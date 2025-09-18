@@ -9,22 +9,19 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div>
-      <div className="bg-gray-50 py-20 flex flex-col items-center">
-        <H1Txt classname="text-[16px] md:text-[25px] py-10">
+      <div className="px-5 md:px-0 text-center bg-gray-50 py-20 flex flex-col items-center">
+        <H1Txt classname="text-sm md:text-[25px] py-10">
           당신을 위한 AI 세무 전문가를 지금 바로 만나보세요
         </H1Txt>
 
-        <div className="flex items-center gap-2">
-          <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
-            <Button variant={"outline"} className="text-[18px]">
-              이용문의
-            </Button>
-          </a>
+        <div className="flex flex-col md:flex-row items-center gap-2 my-10">
+          {/* <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer"> */}
+          <OrangeButton variant="outline">이용문의</OrangeButton>
+          {/* </a> */}
 
-          <Button className="text-[18px]">
-            <div>2주 무료 체험하기</div>
-            <ArrowRight size={13} className="mb-1" />
-          </Button>
+          <OrangeButton classname="flex items-center gap-3">
+            2주 무료 체험하기 <ArrowRight size={25} className="mb-1" />
+          </OrangeButton>
         </div>
       </div>
       <div className=" flex justify-center py-5 bg-pwc-gray-50">
@@ -35,7 +32,7 @@ export default function Footer() {
             width={80}
             height={40}
           />
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 text-sm">
             <div>
               © 2025 PwC. Samil PricewaterhouseCoopers. All rights reserved.
             </div>

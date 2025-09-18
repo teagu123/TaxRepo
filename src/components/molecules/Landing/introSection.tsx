@@ -38,7 +38,7 @@ export function IntroSection() {
             </div>
           </div>
           <div className="flex justify-center">
-            <OrangeButton classname="font-medium my-10 text-[16px] md:text-[20px]  flex items-center gap-3 ">
+            <OrangeButton classname="font-medium mt-10 mb-16 text-[16px] md:text-[20px]  flex items-center gap-3 ">
               2주 무료 체험하기 <ArrowUp className="rotate-90" size={22} />
             </OrangeButton>
           </div>
@@ -48,20 +48,24 @@ export function IntroSection() {
               role="note"
               aria-label="출시 기념 이벤트 안내"
               className="
-             bg-pwc-orange-100 rounded-2xl flex p-3 items-center gap-5 justify-center mb-10 max-w-270 px-10 shadow-md
+             bg-pwc-orange-50 text-base rounded-lg flex items-center justify-center mb-16 max-w-270 px-8 py-4 border-1 border-pwc-orange-300
             "
             >
-              <div className="mt-0.5  rounded-full ">
-                <Megaphone className="text-[#FF6000]" size={20} />
+              <Megaphone className="text-[#FF6000] mr-5" size={20} />
+
+              <div className="text-pwc-orange-500 font-medium mr-2">
+                출시 기념 무료체험 기간 연장 Event
               </div>
-              <p className="text-[14px] md:text-[16px]  text-[#3A2A1B] font-medium ">
-                출시 기념 무료체험 기간 연장 Event : 10월 중 무료체험을
-                신청하시고 11월 15일까지 Tax Agent를 무료로 사용해 보세요!
-              </p>
+              <div className="font-light">
+                <span className="text-[#52555D] font-bold">10월 </span> 중
+                무료체험을 신청하시고
+                <span className="text-[#52555D] font-bold"> 11월 15일</span>까지
+                Tax Agent를 무료로 사용해 보세요!
+              </div>
             </div>
           </div>
 
-          <div className="w-full aspect-[1200/620]">
+          <div className="w-full aspect-[1200/618]">
             <video
               src="/video/intro.mp4"
               autoPlay

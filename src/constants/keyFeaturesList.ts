@@ -24,7 +24,7 @@ export const KEY_FEATURE_LIST = [
   {
     title: "모자란 정보는 AI가 알아서 웹 검색",
     description:
-      "AI가 질의내용을 분석하여 사전에 학습된 세법자료 외에 추가자료가 필요하다고 판단하는 경우 알아서 웹검색을 수행합니다",
+      "AI가 질의내용을 분석하여 사전에 학습된 세법자료 외에 추가자료가 필요하다고 판단하는 경우 알아서 웹검색을 수행합니다.",
     img: "/images/supportingdocs/img2.svg",
     supportImg: [
       "/images/supportingdocs/support1_1.svg",
