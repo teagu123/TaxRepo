@@ -1,3 +1,4 @@
+// PromptEnhancer.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -18,7 +19,8 @@ export function PromptEnhancer({ IMAGES }: { IMAGES: string[] }) {
   if (!IMAGES?.length) return null;
 
   return (
-    <div className="relative w-full h-full">
+    // ✅ 비율 박스: 부모 높이 없어도 자체적으로 공간을 만듭니다.
+    <div className="relative w-full   aspect-[1/1] md:aspect-auto md:h-full">
       {IMAGES.map((src, i) => (
         <motion.div
           key={i}
@@ -30,10 +32,10 @@ export function PromptEnhancer({ IMAGES }: { IMAGES: string[] }) {
           <Image
             src={src}
             alt={`grid img ${i + 1}`}
-            width={1400}
-            height={1400}
+            fill
             priority={i === 0}
-            className="w-full h-full object-contain"
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </motion.div>
       ))}

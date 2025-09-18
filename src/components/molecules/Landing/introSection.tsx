@@ -24,7 +24,7 @@ export function IntroSection() {
             </div>
             <div className="mt-10">
               <div>
-                <span className="relative text-pwc-orange-500">
+                <span className="relative text-pwc-orange-500 font-medium">
                   Tax Agent
                   <span className="absolute left-0 right-0 bottom-0.5 h-2.5 bg-pwc-orange-100 -z-10"></span>
                 </span>
@@ -51,7 +51,7 @@ export function IntroSection() {
              bg-pwc-orange-100 rounded-2xl flex p-3 items-center gap-5 justify-center mb-10 max-w-270 px-10 shadow-md
             "
             >
-              <div className="mt-0.5  rounded-full bg-white/60">
+              <div className="mt-0.5  rounded-full ">
                 <Megaphone className="text-[#FF6000]" size={20} />
               </div>
               <p className="text-[14px] md:text-[16px]  text-[#3A2A1B] font-medium ">

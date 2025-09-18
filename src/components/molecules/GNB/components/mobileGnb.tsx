@@ -54,10 +54,10 @@ export function MobileGnb() {
       <div className="h-16 px-5 flex items-center justify-between">
         <Link href={"/"}>
           <Image
-            src={"/images/logo/logo.svg"}
+            src={"/images/logo/logo_withoutPwC.svg"}
             alt="logoImg"
-            width={60}
-            height={40}
+            width={10}
+            height={10}
             className="min-w-50"
           />
         </Link>
