@@ -12,7 +12,7 @@ export function KeyFeaturesSection() {
         <H1Txt classname="text-[28px] sm:text-[32px] lg:text-[36px]">
           주요 기능
         </H1Txt>
-        <div className="flex flex-col md:gap-10">
+        <div className="flex flex-col  gap-30 md:gap-10">
           {KEY_FEATURE_LIST.map((el, idx) => (
             <motion.div
               initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ export function KeyFeaturesSection() {
               key={el.title}
             >
               <div
-                className={`flex flex-col md:flex-row min-h-[480px]  justify-between  `}
+                className={`flex flex-col md:flex-row   md:justify-between md:gap-8  `}
                 key={el.title}
               >
                 <div className="md:flex-1 p-3  mb-3 md:mb-0 flex flex-col justify-center">
@@ -46,7 +46,7 @@ export function KeyFeaturesSection() {
                     {el.description}
                   </div>
                 </div>
-                <div className="flex-1  flex items-center justify-center ">
+                <div className="flex-1 h-full aspect-[600/480]">
                   {idx === 0 ? (
                     <TaxLawsMarquee />
                   ) : (

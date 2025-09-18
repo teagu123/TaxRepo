@@ -12,7 +12,7 @@ export default function OrangeButton({
   variant?: "fill" | "outline";
 }) {
   const base =
-    "px-12 py-4 rounded-full text-xl font-medium inline-flex items-center justify-center";
+    "px-8 py-3 rounded-full text-xl font-medium inline-flex items-center justify-center";
   const state = isDisable ? "cursor-not-allowed" : "cursor-pointer";
 
   const fill = isDisable

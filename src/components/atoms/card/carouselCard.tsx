@@ -97,9 +97,9 @@ export default function TaxLawsMarquee() {
   const [row1, row2, row3] = splitIntoRows(laws, 3);
 
   return (
-    <section className=" relative bg-[#303236] h-full flex items-center rounded-3xl overflow-hidden [--edge:12%] ">
+    <section className="bg-[#303236] h-full  flex items-center rounded-3xl overflow-hidden [--edge:12%] ">
       {/* 마키 전체 페이드 마스크 (to_right) */}{" "}
-      <div className=" mx-auto max-w-xl space-y-4 md:space-y-6  w-full [mask-image:linear-gradient(to_right,transparent_0%,#000_var(--edge),#000_calc(100%-var(--edge)),transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,#000_var(--edge),#000_calc(100%-var(--edge)),transparent_100%)] ">
+      <div className="h-full flex flex-col justify-center mx-auto max-w-xl space-y-4 md:space-y-6  w-full [mask-image:linear-gradient(to_right,transparent_0%,#000_var(--edge),#000_calc(100%-var(--edge)),transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,#000_var(--edge),#000_calc(100%-var(--edge)),transparent_100%)] ">
         <InfiniteMarqueeRow items={row1} direction="left" speed={110} />{" "}
         <InfiniteMarqueeRow items={row2} direction="right" speed={110} />{" "}
         <InfiniteMarqueeRow items={row3} direction="left" speed={110} />{" "}

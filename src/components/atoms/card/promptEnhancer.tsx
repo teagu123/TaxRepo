@@ -20,7 +20,7 @@ export function PromptEnhancer({ IMAGES }: { IMAGES: string[] }) {
 
   return (
     // ✅ 비율 박스: 부모 높이 없어도 자체적으로 공간을 만듭니다.
-    <div className="relative w-full   aspect-[1/1] md:aspect-auto md:h-full">
+    <div className="relative w-full aspect-[600/480] md:aspect-auto md:h-full">
       {IMAGES.map((src, i) => (
         <motion.div
           key={i}

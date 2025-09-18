@@ -10,11 +10,11 @@ export default function Footer() {
   return (
     <div>
       <div className="px-5 md:px-0 text-center bg-gray-50 py-20 flex flex-col items-center">
-        <H1Txt classname="text-sm md:text-[25px] py-10">
+        <H1Txt classname="text-sm md:text-[25px] pt-10 pb-5">
           당신을 위한 AI 세무 전문가를 지금 바로 만나보세요
         </H1Txt>
 
-        <div className="flex flex-col md:flex-row items-center gap-2 my-10">
+        <div className="flex flex-col md:flex-row items-center gap-4 my-10">
           {/* <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer"> */}
           <OrangeButton variant="outline">이용문의</OrangeButton>
           {/* </a> */}
