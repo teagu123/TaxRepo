@@ -1,5 +1,4 @@
 import { PriceListType } from "@/constants/priceList";
-import { div } from "framer-motion/client";
 import { Check } from "lucide-react";
 import { Button } from "../button/button";
 import Image from "next/image";
