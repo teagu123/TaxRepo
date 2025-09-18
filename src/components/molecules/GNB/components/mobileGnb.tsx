@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { cn } from "@/utils/cn";
+import { MS_FORM_URL } from "@/constants/redirect_url";
 
 export function MobileGnb() {
   const pathname = usePathname();
@@ -109,9 +110,15 @@ export function MobileGnb() {
         {/* 하단 CTA 영역 */}
         <div className="sticky bottom-0">
           <div className="px-5 pt-3 pb-[calc(12px+env(safe-area-inset-bottom))] grid grid-cols-1 gap-2">
-            <Button variant="default" size="sm" className="w-full text-[13px]">
-              2주 무료 체험하기
-            </Button>
+            <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="default"
+                size="sm"
+                className="w-full text-[13px]"
+              >
+                2주 무료 체험하기
+              </Button>
+            </a>
             <Button
               variant="outline"
               size="sm"

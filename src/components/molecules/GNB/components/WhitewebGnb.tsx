@@ -1,5 +1,6 @@
 import { Button } from "@/components/atoms/button/button";
 import { URL_LIST } from "@/constants/gnbList";
+import { MS_FORM_URL } from "@/constants/redirect_url";
 import { cn } from "@/utils/cn";
 import { ExternalLink } from "lucide-react"; //ChevronDown
 import Image from "next/image";
@@ -88,7 +89,9 @@ export function WebGnb() {
           <Button variant="link">
             Tax Agent 사용하기 <ExternalLink />
           </Button>
-          <Button variant="default">2주 무료 체험하기</Button>
+          <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
+            <Button variant="default">2주 무료 체험하기</Button>
+          </a>
         </div>
       </div>
     </div>

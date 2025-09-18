@@ -15,13 +15,13 @@ export default function Footer() {
         </H1Txt>
 
         <div className="flex flex-col md:flex-row items-center gap-4 my-10">
-          {/* <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer"> */}
           <OrangeButton variant="outline">이용문의</OrangeButton>
-          {/* </a> */}
 
-          <OrangeButton classname="flex items-center gap-3">
-            2주 무료 체험하기 <ArrowRight size={25} className="mb-1" />
-          </OrangeButton>
+          <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
+            <OrangeButton classname="flex items-center gap-3">
+              2주 무료 체험하기 <ArrowRight size={25} className="mb-1" />
+            </OrangeButton>
+          </a>
         </div>
       </div>
       <div className=" flex justify-center py-5 bg-pwc-gray-50">

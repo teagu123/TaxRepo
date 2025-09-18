@@ -3,7 +3,6 @@ import { div } from "framer-motion/client";
 import { Check } from "lucide-react";
 import { Button } from "../button/button";
 import Image from "next/image";
-import { MS_FORM_URL } from "@/constants/redirect_url";
 
 export function PriceCard({ plan }: { plan: PriceListType }) {
   return (
@@ -63,9 +62,7 @@ export function PriceCard({ plan }: { plan: PriceListType }) {
             <div>맞춤형 가격 플랜</div>
           </div> */}
 
-          <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
-            <Button className="w-full">이용문의</Button>
-          </a>
+          <Button className="w-full">이용문의</Button>
         </>
       )}
     </article>
