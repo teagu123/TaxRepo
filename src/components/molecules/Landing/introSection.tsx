@@ -2,7 +2,6 @@ import { Container } from "@/components/Template";
 import OrangeButton from "@/components/atoms/button/orangeButton";
 import { ArrowUp, Megaphone } from "lucide-react";
 import { motion } from "framer-motion";
-import { MS_FORM_URL } from "@/constants/redirect_url";
 
 export function IntroSection() {
   return (

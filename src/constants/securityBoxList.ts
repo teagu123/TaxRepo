@@ -2,7 +2,6 @@ export interface SecurityBoxListType {
   image: string;
   title: string;
   subTitle: string;
-  icon: string;
 }
 
 export const SECURITYBOXLIST = [
