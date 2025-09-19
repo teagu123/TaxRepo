@@ -28,7 +28,11 @@ export function PriceSection() {
             ))}
           </div>
 
-          <div className="mt-[48px] bg-pwc-gray-50 p-4 md:p-5 rounded-lg text-sm md:text-[15px] flex flex-col gap-4 md:gap-3">
+          <div className="my-8 text-center text-pwc-gray-500 text-sm">
+            * 안내된 모든 금액은 VAT 미포함 금액입니다.
+          </div>
+
+          <div className=" bg-pwc-gray-50 p-4 md:p-5 rounded-lg text-sm md:text-[15px] flex flex-col gap-4 md:gap-3">
             {/* ITEM 1 */}
             <div className="border-b border-pwc-gray-200 pb-4 md:pb-3 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-0">
               <div className="font-bold md:mr-3 md:col-span-4">

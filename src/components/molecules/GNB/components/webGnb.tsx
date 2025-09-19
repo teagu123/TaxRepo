@@ -1,6 +1,6 @@
 import { Button } from "@/components/atoms/button/button";
 import { URL_LIST } from "@/constants/gnbList";
-import { MS_FORM_URL } from "@/constants/redirect_url";
+import { MS_FORM_URL_FREE_TRIAL } from "@/constants/redirect_url";
 import { cn } from "@/utils/cn";
 import { ExternalLink } from "lucide-react"; //ChevronDown
 import Image from "next/image";
@@ -61,7 +61,7 @@ export function WebGnb() {
           <Link href={"/"} onClick={handleClick}>
             <div className="flex items-center mr-5 h-full">
               <Image
-                src={"/images/logo/logo_withoutPwC.svg"}
+                src={"/images/logo/logo_black_withoutPwC.svg"}
                 alt="logoImg"
                 width={300}
                 height={36}
@@ -84,12 +84,15 @@ export function WebGnb() {
           })}
         </div>
 
-        {/* 오른쪽: 이용문의 버튼 */}
         <div className="flex items-center gap-3">
           <Button variant="link">
             Tax Agent 사용하기 <ExternalLink />
           </Button>
-          <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
+          <a
+            href={MS_FORM_URL_FREE_TRIAL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button variant="default">2주 무료 체험하기</Button>
           </a>
         </div>

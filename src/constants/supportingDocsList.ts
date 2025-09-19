@@ -8,8 +8,10 @@ export const SUPPORTING_DOCS_LIST = [
   {
     title: "세계적으로 검증된 AI 성능",
     description:
-      "Hugging Face MTEB 리더보드 1위 알고리즘과\n공인회계사·세무사 1차 시험 세법 과목 통과 수준의 답변 정확성을 자랑합니다.",
+      "삼일회계법인이 자체개발한 Tax Agent의 핵심 알고리즘은 Hugging Face MTEB 리더보드에서 1위를 기록하며 그 성능이 검증되었습니다.",
     img: "/images/supportingdocs/img2.svg",
+    subDesCription:
+      "(*) Hugging Face의 MTEB 리더보드: 텍스트 및 이미지 임베딩 모델들을 평가하고 비교할 수 있는 플랫폼",
   },
 ];
 

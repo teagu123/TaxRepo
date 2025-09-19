@@ -40,6 +40,9 @@ export function WhyChooseTax() {
                 <p className="mt-3 text-[16px] sm:text-[17px] lg:text-[18px] leading-relaxed whitespace-pre-line">
                   {el.description}
                 </p>
+                <p className="text-[13px] text-[#303236] mt-2">
+                  {el.subDesCription}
+                </p>
               </div>
 
               {/* 이미지 */}

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { cn } from "@/utils/cn";
-import { MS_FORM_URL } from "@/constants/redirect_url";
+import { MS_FORM_URL_FREE_TRIAL } from "@/constants/redirect_url";
 
 export function MobileGnb() {
   const pathname = usePathname();
@@ -45,7 +45,7 @@ export function MobileGnb() {
       <div className="h-16 px-5 flex items-center justify-between">
         <Link href={"/"}>
           <Image
-            src={"/images/logo/logo_withoutPwC.svg"}
+            src={"/images/logo/logo_black_withoutPwC.svg"}
             alt="logoImg"
             width={220}
             height={220}
@@ -110,7 +110,11 @@ export function MobileGnb() {
         {/* 하단 CTA 영역 */}
         <div className="sticky bottom-0">
           <div className="px-5 pt-3 pb-[calc(12px+env(safe-area-inset-bottom))] grid grid-cols-1 gap-2">
-            <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
+            <a
+              href={MS_FORM_URL_FREE_TRIAL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 variant="default"
                 size="sm"

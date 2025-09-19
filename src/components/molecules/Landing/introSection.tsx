@@ -2,7 +2,7 @@ import { Container } from "@/components/Template";
 import OrangeButton from "@/components/atoms/button/orangeButton";
 import { ArrowUp, Megaphone } from "lucide-react";
 import { motion } from "framer-motion";
-import { MS_FORM_URL } from "@/constants/redirect_url";
+import { MS_FORM_URL_FREE_TRIAL } from "@/constants/redirect_url";
 
 export function IntroSection() {
   return (
@@ -39,7 +39,11 @@ export function IntroSection() {
             </div>
           </div>
           <div className="flex justify-center">
-            <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
+            <a
+              href={MS_FORM_URL_FREE_TRIAL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <OrangeButton classname="font-medium mt-10 mb-16 text-[16px] md:text-[20px]  flex items-center gap-3 ">
                 2주 무료 체험하기 <ArrowUp className="rotate-90" size={22} />
               </OrangeButton>

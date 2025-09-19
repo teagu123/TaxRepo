@@ -1,7 +1,10 @@
 import { Button } from "@/components/atoms/button/button";
 import OrangeButton from "@/components/atoms/button/orangeButton";
 import H1Txt from "@/components/atoms/H1Txt/H1Txt";
-import { MS_FORM_URL } from "@/constants/redirect_url";
+import {
+  MS_FORM_URL_FREE_TRIAL,
+  MS_FORM_URL_INQUIRY,
+} from "@/constants/redirect_url";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,9 +18,18 @@ export default function Footer() {
         </H1Txt>
 
         <div className="flex flex-col md:flex-row items-center gap-4 my-10">
-          <OrangeButton variant="outline">이용문의</OrangeButton>
-
-          <a href={MS_FORM_URL} target="_blank" rel="noopener noreferrer">
+          <a
+            href={MS_FORM_URL_INQUIRY}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <OrangeButton variant="outline">이용문의</OrangeButton>
+          </a>
+          <a
+            href={MS_FORM_URL_FREE_TRIAL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <OrangeButton classname="flex items-center gap-3">
               2주 무료 체험하기 <ArrowRight size={25} className="mb-1" />
             </OrangeButton>
