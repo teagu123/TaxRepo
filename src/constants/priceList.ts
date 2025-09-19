@@ -33,5 +33,6 @@ export const PRICE_LIST: PriceListType[] = [
   {
     name: "Custom",
     won: "맞춤형 플랜",
+    credit: "28,000",
   },
 ];

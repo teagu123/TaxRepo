@@ -46,7 +46,7 @@ export function KeyFeaturesSection() {
                     {el.description}
                   </div>
                 </div>
-                <div className="flex-1 h-full aspect-[600/480]">
+                <div className="flex-1 w-full h-full aspect-[600/480]">
                   {idx === 0 ? (
                     <TaxLawsMarquee />
                   ) : (

@@ -24,7 +24,7 @@ export function PriceCard({ plan }: { plan: PriceListType }) {
       </div>
 
       {plan.name === "Custom" ? (
-        <span className="text-[32px]  text-pwc-black font-bold  leading-none ">
+        <span className="text-[24px]  text-pwc-black font-bold  leading-none ">
           맞춤형 플랜
         </span>
       ) : (
@@ -37,7 +37,14 @@ export function PriceCard({ plan }: { plan: PriceListType }) {
         </div>
       )}
 
-      {plan.name !== "Custom" && (
+      {plan.name === "Custom" ? (
+        <span className="text-pwc-orange-500 mt-4 rounded-[8px] flex flex-col items-center bg-pwc-gray-50  px-3 py-2 border border-pwc-orange-300 ">
+          <div className="text-[14px] font-semibold">
+            <span className="text-[20px] font-bold ">{plan.credit} </span>
+            크레딧 초과
+          </div>
+        </span>
+      ) : (
         <span className="text-pwc-orange-500 rounded-[8px] flex flex-col items-center bg-pwc-gray-50  p-3 border border-pwc-orange-300 ">
           <div className="text-[12px] text-pwc-white rounded-[13px] bg-pwc-orange-500 px-2 py-0.5 font-normal">
             + {plan.bonus} 보너스
@@ -51,17 +58,12 @@ export function PriceCard({ plan }: { plan: PriceListType }) {
 
       <div
         className={`font-medium text-[14px] ${
-          plan.name === "Custom" && "mt-4"
+          plan.name === "Custom" && "mt-2"
         }`}
       ></div>
 
       {plan.name === "Custom" && (
         <>
-          {/* <div className="flex items-center">
-            <Check size={16} className="text-pwc-orange-500 mr-2" />
-            <div>맞춤형 가격 플랜</div>
-          </div> */}
-
           <Button className="w-full">이용문의</Button>
         </>
       )}
