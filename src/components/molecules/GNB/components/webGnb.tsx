@@ -53,7 +53,7 @@ export function WebGnb() {
   }, [isDropdownOpen]);
 
   return (
-    <div className="hidden lg:flex h-16 bg-pwc-black text-pwc-white border-b-1 border-b-pwc-gray-200 fixed top-0 left-0 right-0 z-50 px-3 xl:px-20">
+    <div className="hidden lg:flex h-16 bg-pwc-white text-pwc-white border-b-1 border-b-pwc-gray-200 fixed top-0 left-0 right-0 z-50 px-3 xl:px-20">
       {/* PC 이상에서는 flex 한 줄 */}
       <div className="flex w-full h-16 items-stretch justify-between">
         {/* 왼쪽: 로고 + 메뉴 */}
@@ -74,7 +74,7 @@ export function WebGnb() {
               <Link href={el.url} key={idx}>
                 <div
                   className={cn(
-                    "relative px-3 inline-flex cursor-pointer h-full items-center text-pwc-white after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-orange-500 after:transition-transform after:duration-200 hover:after:scale-x-100"
+                    "relative px-3 inline-flex cursor-pointer h-full items-center text-pwc-black after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-orange-500 after:transition-transform after:duration-200 hover:after:scale-x-100"
                   )}
                 >
                   {el.label}

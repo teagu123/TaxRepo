@@ -1,2 +1,2 @@
 export * from "./webGnb";
-export * from "./mobileGnb";
+export * from "./WhitemobileGnb";

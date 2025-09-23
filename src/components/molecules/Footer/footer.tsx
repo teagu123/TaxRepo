@@ -41,7 +41,7 @@ export default function Footer() {
               size="lg"
               className="text-xl font-medium inline-flex items-center justify-center"
             >
-              2주 무료 체험하기 <ArrowRight size={25} className="mb-1" />
+              2주 무료 체험하기 <ArrowRight className="size-5" />
             </Button>
           </a>
         </div>

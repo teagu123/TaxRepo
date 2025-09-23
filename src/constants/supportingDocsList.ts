@@ -11,7 +11,7 @@ export const SUPPORTING_DOCS_LIST = [
       "삼일회계법인이 자체개발한 Tax Agent의 핵심 알고리즘은 Hugging Face MTEB 리더보드에서 1위를 기록하며 그 성능이 검증되었습니다.",
     img: "/images/supportingdocs/img2.svg",
     subDesCription:
-      "(*) Hugging Face의 MTEB 리더보드: 텍스트 및 이미지 임베딩 모델들을 평가하고 비교할 수 있는 플랫폼",
+      "(*) Hugging Face MTEB 리더보드: 텍스트 및 이미지 임베딩 모델들을 평가하고 비교할 수 있는 플랫폼",
   },
 ];
 

@@ -55,8 +55,8 @@ export function PriceSection() {
                   과정에서 사용되는 AI 모델별 토큰 사용량에 따라 차감됩니다.
                 </div>
                 <div className="text-xs md:text-[14px] md:ml-4 text-pwc-black/50 mt-1">
-                  (질의내용에 따른 편차가 존재하나, 평균적으로 1 Credit 당 0.5 ~
-                  1.5개의 질의답변이 가능합니다.)
+                  (질의내용에 따른 편차가 존재하나, 평균적으로 1 크레딧은 당 0.5
+                  ~ 1.5개의 질의답변이 가능합니다.)
                 </div>
               </div>
             </div>
