@@ -16,8 +16,8 @@ export default function OrangeButton({
   const state = isDisable ? "cursor-not-allowed" : "cursor-pointer";
 
   const fill = isDisable
-    ? "bg-gray-400 text-white"
-    : "bg-pwc-orange-500 text-white";
+    ? "bg-gray-400 text-pwc-black"
+    : "bg-pwc-orange-500 text-pwc-black";
 
   const outline = isDisable
     ? "border border-gray-400 text-gray-400 bg-transparent"

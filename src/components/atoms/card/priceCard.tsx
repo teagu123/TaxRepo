@@ -39,22 +39,45 @@ export function PriceCard({ plan }: { plan: PriceListType }) {
       )}
 
       {plan.name === "Custom" ? (
-        <span className="text-pwc-orange-500 mt-4 rounded-[8px] flex flex-col items-center bg-pwc-gray-50  px-3 py-2 border border-pwc-orange-300 ">
+        <span className="text-pwc-orange-500 mt-9 rounded-[8px] flex flex-col items-center bg-pwc-gray-50  px-3 py-2 border border-pwc-orange-300 ">
           <div className="text-[14px] font-semibold">
             <span className="text-[20px] font-bold ">{plan.credit} </span>
             크레딧 초과
           </div>
         </span>
       ) : (
-        <span className="text-pwc-orange-500 rounded-[8px] flex flex-col items-center bg-pwc-gray-50  p-3 border border-pwc-orange-300 ">
-          <div className="text-[12px] text-pwc-white rounded-[13px] bg-pwc-orange-500 px-2 py-0.5 font-normal">
-            + {plan.bonus} 보너스
-          </div>
-          <div className="text-[14px] font-semibold">
-            총 <span className="text-[20px] font-bold ">{plan.credit}</span>{" "}
-            크레딧
+        <span className="text-pwc-orange-500 rounded-[8px] relative flex flex-col items-center bg-pwc-gray-50  p-3 border border-pwc-orange-300 ">
+          <div className="text-sm font-bold text-[#303236] ">
+            <div
+              className={`text-center font-bold text-pwc-orange-500 text-xl ${
+                plan!.totalCredit!.length >= 6 && "ml-1"
+              }`}
+            >
+              {plan.totalCredit}
+            </div>
+            <div>{plan.credit} 크레딧</div>
+            <Image
+              src={"/images/priceImage/Line3.svg"}
+              alt="line3"
+              width={50}
+              height={30}
+              className="absolute bottom-5 left-9"
+            />
           </div>
         </span>
+      )}
+
+      {plan.name !== "Custom" && (
+        <div className="flex flex-col items-center  text-sm justify-center w-full  mt-6">
+          <div className="flex items-center gap-2 justify-start  w-35  bg-red">
+            <Check size={14} className="text-pwc-orange-500" /> 크레딧
+            {" " + plan.bonus} 보너스
+          </div>
+          <div className="flex items-center justify-start   gap-2 w-35">
+            <Check size={14} className="text-pwc-orange-500" />
+            최대 사용자 {plan.maxUsers}명
+          </div>
+        </div>
       )}
 
       <div

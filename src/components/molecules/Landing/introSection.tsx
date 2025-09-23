@@ -1,8 +1,9 @@
 import { Container } from "@/components/Template";
 import OrangeButton from "@/components/atoms/button/orangeButton";
-import { ArrowUp, Megaphone } from "lucide-react";
+import { ArrowRight, ArrowUp, Megaphone, PartyPopper } from "lucide-react";
 import { motion } from "framer-motion";
 import { MS_FORM_URL_FREE_TRIAL } from "@/constants/redirect_url";
+import { Button } from "@/components/atoms/button/button";
 
 export function IntroSection() {
   return (
@@ -44,9 +45,13 @@ export function IntroSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <OrangeButton classname="font-medium mt-10 mb-16 text-[16px] md:text-[20px]  flex items-center gap-3 ">
-                2주 무료 체험하기 <ArrowUp className="rotate-90" size={22} />
-              </OrangeButton>
+              <Button
+                variant="default"
+                size="lg"
+                className="text-xl font-medium inline-flex items-center justify-center mt-10 mb-16"
+              >
+                2주 무료 체험하기 <ArrowRight size={25} className="mb-1" />
+              </Button>
             </a>
           </div>
 
@@ -55,15 +60,15 @@ export function IntroSection() {
               role="note"
               aria-label="출시 기념 이벤트 안내"
               className="
-             bg-pwc-orange-50 text-base rounded-lg flex items-center justify-center mb-16 max-w-270 px-8 py-4 border-1 border-pwc-orange-300
+             bg-pwc-orange-50 text-base rounded-lg flex flex-col gap-2 items-center justify-center mb-16 max-w-270 px-8 py-4 border-1 border-pwc-orange-300
             "
             >
-              <Megaphone className="text-[#FF6000] mr-5" size={20} />
-
-              <div className="text-pwc-orange-500 font-medium mr-2">
-                출시 기념 무료체험 기간 연장 Event
+              <div className="text-pwc-orange-500 font-medium mr-2 flex items-center">
+                <PartyPopper className="text-[#FF6000] mr-2.5" size={20} />
+                <div>10월 15일 출시 기념 무료체험 기간 연장 Event</div>
+                <PartyPopper className="text-[#FF6000] ml-2.5 " size={20} />
               </div>
-              <div className="font-light">
+              <div>
                 <span className="text-[#52555D] font-bold">10월 </span> 중
                 무료체험을 신청하시고
                 <span className="text-[#52555D] font-bold"> 11월 15일</span>까지

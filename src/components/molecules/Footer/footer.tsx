@@ -23,16 +23,26 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <OrangeButton variant="outline">이용문의</OrangeButton>
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-xl font-medium inline-flex items-center justify-center"
+            >
+              이용문의
+            </Button>
           </a>
           <a
             href={MS_FORM_URL_FREE_TRIAL}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <OrangeButton classname="flex items-center gap-3">
+            <Button
+              variant="default"
+              size="lg"
+              className="text-xl font-medium inline-flex items-center justify-center"
+            >
               2주 무료 체험하기 <ArrowRight size={25} className="mb-1" />
-            </OrangeButton>
+            </Button>
           </a>
         </div>
       </div>

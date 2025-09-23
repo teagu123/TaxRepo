@@ -118,7 +118,7 @@ export function MobileGnb() {
               <Button
                 variant="default"
                 size="sm"
-                className="w-full text-[13px]"
+                className="w-full text-[13px] text-pwc-black"
               >
                 2주 무료 체험하기
               </Button>

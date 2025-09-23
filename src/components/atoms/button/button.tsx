@@ -7,9 +7,9 @@ const baseClasses =
 
 // Variant class maps
 const variantClasses = {
-  default: "bg-pwc-orange-500 text-white shadow-xs hover:bg-pwc-orange-400",
+  default: "bg-pwc-orange-500 text-pwc-black shadow-xs hover:bg-pwc-orange-400",
   destructive:
-    "bg-pwc-status-error-bg text-white shadow-xs hover:bg-pwc-red/90 focus-visible:ring-pwc-red/20 dark:focus-visible:ring-pwc-red/40 dark:bg-pwc-red/80",
+    "bg-pwc-status-error-bg text-pwc-black shadow-xs hover:bg-pwc-red/90 focus-visible:ring-pwc-red/20 dark:focus-visible:ring-pwc-red/40 dark:bg-pwc-red/80",
   outline:
     "border border-pwc-gray-300 bg-pwc-white text-pwc-text-grey shadow-xs hover:bg-pwc-gray-50",
   secondary:
@@ -22,7 +22,7 @@ const variantClasses = {
 const sizeClasses = {
   default: "h-9 px-4 py-2 has-[>svg]:px-3",
   sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-  lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+  lg: "h-12 rounded-md px-8 has-[>svg]:px-6 ",
   icon: "size-9",
 } as const;
 
