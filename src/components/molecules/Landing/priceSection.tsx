@@ -18,8 +18,8 @@ export function PriceSection() {
           viewport={{ once: false }}
           transition={{
             ease: "easeIn",
-            duration: 1.3,
-            x: { duration: 1 },
+            duration: 0.5,
+            x: { duration: 0.5 },
           }}
         >
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-5">

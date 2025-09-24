@@ -15,8 +15,8 @@ export function SecuritySection() {
       viewport={{ once: false }}
       transition={{
         ease: "easeInOut",
-        duration: 2,
-        x: { duration: 1 },
+        duration: 1,
+        x: { duration: 0.5 },
       }}
     >
       <div>
