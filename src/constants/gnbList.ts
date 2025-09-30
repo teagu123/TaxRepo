@@ -17,6 +17,6 @@ export const URL_LIST = [
   },
   {
     url: "/userGuide",
-    label: "이용 가이드",
+    label: "이용 매뉴얼",
   },
 ];
