@@ -15,4 +15,8 @@ export const URL_LIST = [
     url: "/#Pricing",
     label: "요금 안내",
   },
+  {
+    url: "/userGuide",
+    label: "이용 매뉴얼",
+  },
 ];
